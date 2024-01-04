@@ -36,6 +36,8 @@ Work experience
     * [Math 31AH](https://catalog.ucsd.edu/courses/MATH.html#math31ah), Honors Linear Algebra, Fall 2023
 
 * Fall 2023 - Present: Instructional Assistant
+  * University of California, San Diego
+  * Courses:
     * [Math 10A](https://catalog.ucsd.edu/courses/MATH.html#math10a), Calculus I, Fall 2023
     * [Math 10B](https://catalog.ucsd.edu/courses/MATH.html#math10b), Calculus II, Fall 2023
   

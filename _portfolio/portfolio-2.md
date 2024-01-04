@@ -1,6 +1,7 @@
 ---
 title: "Linear Regression-Based Image Classification"
-excerpt: "Signal Processing Toolkit for a DTMF detector meant for a standard numeric dial pad. <br/><img src='/images/LinRegClassification.png'>"
+excerpt: "I built an classifier for the MNIST handwritten digits dataset using a linear least squares-based classifier.
+. <br/><img src='/images/LinRegClassification.png'>"
 collection: portfolio
 ---
 *Designed and built for ECE 174 with professor [Piya Pal](https://jacobsschool.ucsd.edu/faculty/profile?id=411).*

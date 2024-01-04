@@ -1,7 +1,7 @@
 ---
 title: '2024 January 3'
 date: 2024-01-03
-permalink: /posts/2024/01/03
+permalink: /posts/2024/01/first-post
 tags:
   - cool posts
   - new year
