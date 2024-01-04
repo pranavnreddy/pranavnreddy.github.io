@@ -11,30 +11,52 @@ redirect_from:
 
 Education
 ======
-* B.S. in GitHub, GitHub University, 2012
-* M.S. in Jekyll, GitHub University, 2014
-* Ph.D in Version Control Theory, GitHub University, 2018 (expected)
+* B.S. in Mathematics, University of California, San Diego, 2025 (*in progress*)
+* B.S. in Electrical Engineering, University of California, San Diego, 2025 (*in progress*)
+
 
 Work experience
 ======
-* Summer 2015: Research Assistant
-  * Github University
-  * Duties included: Tagging issues
-  * Supervisor: Professor Git
+* Summer 2023 - Present: Research Assistant
+  * University of California, San Diego
+  * Investigating applications of the Performance Estimation Problem (PEP) framework to weakly convex functions.
+  * Supervisor: Professor [Yang Zheng](https://zhengy09.github.io/)
 
-* Fall 2015: Research Assistant
-  * Github University
-  * Duties included: Merging pull requests
-  * Supervisor: Professor Hub
+* Fall 2022 - Present: Grader
+  * University of California, San Diego
+  * Courses:
+    * [Math 10C](https://catalog.ucsd.edu/courses/MATH.html#math10c), Calculus III, Fall 2022
+    * [Math 31BH](https://catalog.ucsd.edu/courses/MATH.html#math31bh), Honors Multivariable Calculus, Winter 2023
+    * [Math 31CH](https://catalog.ucsd.edu/courses/MATH.html#math31ch), Honors Vector Calculus, Spring 2023
+    * [Math 170B](https://catalog.ucsd.edu/courses/MATH.html#math170b), Introduction to Numerical Analysis: Approximation and Nonlinear Equations, Spring 2023
+    * [Math 31AH](https://catalog.ucsd.edu/courses/MATH.html#math31ah), Honors Linear Algebra, Fall 2023
+
+* Fall 2023 - Present: Instructional Assistant
+    * [Math 10A](https://catalog.ucsd.edu/courses/MATH.html#math10a), Calculus I, Fall 2023
+    * [Math 10B](https://catalog.ucsd.edu/courses/MATH.html#math10b), Calculus II, Fall 2023
   
 Skills
 ======
-* Skill 1
-* Skill 2
-  * Sub-skill 2.1
-  * Sub-skill 2.2
-  * Sub-skill 2.3
-* Skill 3
+* Programming Languages
+  * MATLAB
+  * Python
+  * C
+  * C++
+  * Java
+  * SystemVerilog
+* Circuit Design
+  * LTSpice
+  * PSpice
+  * Cadence
+  * Quartus Prime
+  * ModelSim
+  * Questa
+* Libraries / Toolkits
+  * NumPy
+  * SciPy
+  * pandas
+  * TensorFlow
+  * PyTorch
 
 Publications
 ======
@@ -56,4 +78,5 @@ Teaching
   
 Service and leadership
 ======
-* Currently signed in to 43 different slack teams
+* Member of the Society of Undergraduate Mathematics Students (SUMS)
+* Member of IEEE-HKN
