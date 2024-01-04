@@ -7,7 +7,11 @@ redirect_from:
   - /resume
 ---
 
+My resume can be downloaded [here](/files/Resume.pdf).
+
 {% include base_path %}
+
+
 
 Education
 ======

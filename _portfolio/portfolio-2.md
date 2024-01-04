@@ -1,11 +1,12 @@
 ---
-title: "Dual-Tone Multiple Frequency Detector"
-excerpt: "Signal Processing Toolkit for a DTMF detector meant for a standard numeric dial pad. <br/><img src='/images/DTMF_cover.png'>"
+title: "Linear Regression-Based Image Classification"
+excerpt: "Signal Processing Toolkit for a DTMF detector meant for a standard numeric dial pad. <br/><img src='/images/LinRegClassification.png'>"
 collection: portfolio
 ---
-Desgined and built for ECE 161A with professor [fred harris](https://web.archive.org/web/20160511170915/http://electrical.sdsu.edu/faculty/frederick_harris.html).
-We designed a digital signals processing system for detecting dial tones representing alphanumeric characters from a given input waveform. Used 11 Chebyshev Type 2 filters to successfully filter and detect signals and separate noise.
-I lead and managed a team of 3 people over a period of 3 weeks to write 9000 of lines of code in MATLAB.
-In addtition, I wrote testing scripts to ensure validity and stability of digital filters in both time and frequency domain.
-We verified correctness of design using both infinite and finite impulse response filters.
-The FIR filters were implemented using the Remez algorithm.
+*Designed and built for ECE 174 with professor [Piya Pal](https://jacobsschool.ucsd.edu/faculty/profile?id=411).*
+
+I built an classifier for the MNIST handwritten digits dataset using a linear least squares-based classifier.
+The numerical routines were done using NumPy, and the design was left to me. 
+The image below shows the performance of different activiation functions when used in a feature mapping.
+
+![Performance of Different Activations](LinRegClassification.png)

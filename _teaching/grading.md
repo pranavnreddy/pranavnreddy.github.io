@@ -2,7 +2,7 @@
 title: "Grading"
 collection: teaching
 type: "Undergraduate course"
-permalink: /teaching/2014-spring-teaching-1
+permalink: /teaching/grading
 venue: "University of California, San Diego"
 date: 2022-01-01
 location: "City, Country"
