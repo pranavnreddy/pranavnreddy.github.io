@@ -2,6 +2,7 @@
 title: "Dual-Tone Multiple Frequency Detector"
 excerpt: "Signal Processing Toolkit for a DTMF detector meant for a standard numeric dial pad. <br/><img src='/images/DTMF_cover.png'>"
 collection: portfolio
+url: https://github.com/pranavnreddy/DTMF_Detector
 ---
 *Designed and built for ECE 161A with professor [fred harris](https://web.archive.org/web/20160511170915/http://electrical.sdsu.edu/faculty/frederick_harris.html).*
 
