@@ -1,20 +1,12 @@
 ---
 title: "Instructional Assistant"
 collection: teaching
-type: "Workshop"
 permalink: /teaching/tutoring
-venue: "University 1, Department"
-date: 2015-01-01
-location: "City, Country"
+venue: "University of California, San Diego"
+date: 2023-09-01
+location: "La Jolla, CA"
 ---
 
-This is a description of a teaching experience. You can use markdown like any other post.
-
-Heading 1
-======
-
-Heading 2
-======
-
-Heading 3
-======
+I worked as a tutor in the following courses:
+* <a href="https://catalog.ucsd.edu/courses/MATH.html#math10a" target="_blank">Math 10A</a>, Calculus I, Fall 2023
+* <a href="https://catalog.ucsd.edu/courses/MATH.html#math10b" target="_blank">Math 10B</a>, Calculus II, Fall 2023

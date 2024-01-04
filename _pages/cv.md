@@ -11,8 +11,6 @@ My resume can be downloaded [here](/files/Resume.pdf).
 
 {% include base_path %}
 
-
-
 Education
 ======
 * B.S. in Mathematics, University of California, San Diego, 2025 (*in progress*)
@@ -21,55 +19,54 @@ Education
 
 Work experience
 ======
-* Summer 2023 - Present: Research Assistant
+## Research Assistant – University of California, San Diego
+### Summer 2023 - Present
   * University of California, San Diego
   * Investigating applications of the Performance Estimation Problem (PEP) framework to weakly convex functions.
   * Supervisor: Professor [Yang Zheng](https://zhengy09.github.io/)
 
-* Fall 2022 - Present: Grader
-  * University of California, San Diego
-  * Courses:
-    * [Math 10C](https://catalog.ucsd.edu/courses/MATH.html#math10c), Calculus III, Fall 2022
-    * [Math 31BH](https://catalog.ucsd.edu/courses/MATH.html#math31bh), Honors Multivariable Calculus, Winter 2023
-    * [Math 31CH](https://catalog.ucsd.edu/courses/MATH.html#math31ch), Honors Vector Calculus, Spring 2023
-    * [Math 170B](https://catalog.ucsd.edu/courses/MATH.html#math170b), Introduction to Numerical Analysis: Approximation and Nonlinear Equations, Spring 2023
-    * [Math 31AH](https://catalog.ucsd.edu/courses/MATH.html#math31ah), Honors Linear Algebra, Fall 2023
+## Grader – University of California, San Diego
+### Fall 2022 - Present
+* [Math 10C](https://catalog.ucsd.edu/courses/MATH.html#math10c), Calculus III, Fall 2022
+* [Math 31BH](https://catalog.ucsd.edu/courses/MATH.html#math31bh), Honors Multivariable Calculus, Winter 2023
+* [Math 31CH](https://catalog.ucsd.edu/courses/MATH.html#math31ch), Honors Vector Calculus, Spring 2023
+* [Math 170B](https://catalog.ucsd.edu/courses/MATH.html#math170b), Introduction to Numerical Analysis: Approximation and Nonlinear Equations, Spring 2023
+* [Math 31AH](https://catalog.ucsd.edu/courses/MATH.html#math31ah), Honors Linear Algebra, Fall 2023
 
-* Fall 2023 - Present: Instructional Assistant
-  * University of California, San Diego
-  * Courses:
-    * [Math 10A](https://catalog.ucsd.edu/courses/MATH.html#math10a), Calculus I, Fall 2023
-    * [Math 10B](https://catalog.ucsd.edu/courses/MATH.html#math10b), Calculus II, Fall 2023
+## Instructional Assistant – University of California, San Diego
+### Fall 2023 - Present: 
+  * [Math 10A](https://catalog.ucsd.edu/courses/MATH.html#math10a), Calculus I, Fall 2023
+  * [Math 10B](https://catalog.ucsd.edu/courses/MATH.html#math10b), Calculus II, Fall 2023
   
 Skills
 ======
-* Programming Languages
+## Programming Languages
   * MATLAB
   * Python
   * C
   * C++
   * Java
   * SystemVerilog
-* Circuit Design
+## Circuit Design
   * LTSpice
   * PSpice
   * Cadence
   * Quartus Prime
   * ModelSim
   * Questa
-* Libraries / Toolkits
+## Libraries / Toolkits
   * NumPy
   * SciPy
   * pandas
   * TensorFlow
   * PyTorch
-
+<!-- 
 Publications
 ======
   <ul>{% for post in site.publications %}
     {% include archive-single-cv.html %}
   {% endfor %}</ul>
-  
+   -->
 Talks
 ======
   <ul>{% for post in site.talks %}
@@ -78,9 +75,20 @@ Talks
   
 Teaching
 ======
-  <ul>{% for post in site.teaching %}
+  <!-- <ul>{% for post in site.teaching %}
     {% include archive-single-cv.html %}
-  {% endfor %}</ul>
+  {% endfor %}</ul> -->
+  ## University of California, San Diego
+  ### Grading
+  * <a href="https://catalog.ucsd.edu/courses/MATH.html#math10c" target="_blank">Math 10C</a>, Calculus III, Fall 2022
+  * <a href="https://catalog.ucsd.edu/courses/MATH.html#math31bh" target="_blank">Math 31BH</a>, Honors Multivariable Calculus, Winter 2023
+  * <a href="https://catalog.ucsd.edu/courses/MATH.html#math31ch" target="_blank">Math 31CH</a>, Honors Vector Calculus, Spring 2023
+  * <a href="https://catalog.ucsd.edu/courses/MATH.html#math170b" target="_blank">Math 170B</a>, Introduction to Numerical Analysis: Approximation and Nonlinear Equations, Spring 2023
+  * <a href="https://catalog.ucsd.edu/courses/MATH.html#math31ah" target="_blank">Math 31AH</a>, Honors Linear Algebra, Fall 2023
+
+  ### Tutoring
+  * <a href="https://catalog.ucsd.edu/courses/MATH.html#math10a" target="_blank">Math 10A</a>, Calculus I, Fall 2023
+  * <a href="https://catalog.ucsd.edu/courses/MATH.html#math10b" target="_blank">Math 10B</a>, Calculus II, Fall 2023
   
 Service and leadership
 ======
