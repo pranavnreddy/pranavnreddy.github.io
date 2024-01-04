@@ -9,4 +9,4 @@ I built an classifier for the MNIST handwritten digits dataset using a linear le
 The numerical routines were done using NumPy, and the design was left to me. 
 The image below shows the performance of different activiation functions when used in a feature mapping.
 
-![Performance of Different Activations](LinRegClassification.png)
+![Performance of Different Activations](/images/LinRegClassification.png)

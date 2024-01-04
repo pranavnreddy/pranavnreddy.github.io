@@ -11,4 +11,4 @@ In addtition, I wrote testing scripts to ensure validity and stability of digita
 We verified correctness of design using both infinite and finite impulse response filters.
 The FIR filters were implemented using the Remez algorithm.
 
-![Frequency Response of a Filter](DTMF_cover.png)
+![Frequency Response of a Filter](/images/DTMF_cover.png)
