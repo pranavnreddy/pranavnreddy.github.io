@@ -46,13 +46,6 @@ Skills
 * **Circuit Design**: LTSpice, PSpice, Cadence, Quartus Prime, ModelSim, Questa
 * **Libraries / Toolkits**: NumPy, SciPy, pandas, TensorFlow, PyTorch
 * **Miscellaneous**: Excel, Bash, Digital Design, Soldering
-<!-- 
-Publications
-======
-  <ul>{% for post in site.publications %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
-   -->
   
 ---
 
@@ -66,10 +59,6 @@ Talks
 
 Teaching
 ======
-
-  <!-- <ul>{% for post in site.teaching %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul> -->
 
 ## University of California, San Diego
 ### Grading
