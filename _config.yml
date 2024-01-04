@@ -7,7 +7,7 @@
 
 # Site Settings
 locale                   : "en-US"
-title                    : "PR"
+title                    : "Pranav Reddy"
 title_separator          : "-"
 name                     : &name "Pranav Reddy"
 description              : &description "I am currently a student at UCSD studying Mathematics and Electrical Engineering. My interests lie in convex optimization and probability theory."
