@@ -1,5 +1,5 @@
 ---
-title: 'First Post'
+title: 'Automorphisms of the Circle Group'
 date: 2024-01-04
 permalink: /posts/2024/01/automorphisms-of-u1
 tags:
