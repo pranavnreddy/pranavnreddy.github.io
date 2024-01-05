@@ -19,6 +19,7 @@ The proof proceeds as follows:
 3. 1 and 2 imply that the subgroup of all roots of unity is a characteristic subgroup.
 4. The subgroup of all roots of unity is dense in the circle group.
 5. 3 and 4 imply that we need only to look at how each $n$-th root is mapped to another $n$-th root. By density, the automorphism will be determined by its action on the dense subset.
+6. Using the automorphisms found in 5, determine the group structure of $\mathrm{Aut}(U(1))$.
 
 # 1. Isomorphisms preserve orders of elements
 This section is mainly included for completeness.
