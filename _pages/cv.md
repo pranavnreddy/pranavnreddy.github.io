@@ -15,6 +15,7 @@ Education
 ======
 * B.S. in Mathematics, University of California, San Diego, 2025 (*in progress*)
 * B.S. in Electrical Engineering, University of California, San Diego, 2025 (*in progress*)
+* GPA: 3.96
 
 ---
 
