@@ -72,7 +72,7 @@ Teaching
 
 ### Tutoring
   * <a href="https://catalog.ucsd.edu/courses/MATH.html#math10a" target="_blank">Math 10A</a>, Calculus I, Fall 2023
-  * <a href="https://catalog.ucsd.edu/courses/MATH.html#math10b" target="_blank">Math 10B</a>, Calculus II, Fall 2023
+  * <a href="https://catalog.ucsd.edu/courses/MATH.html#math10b" target="_blank">Math 10B</a>, Calculus II, Winter 2024
   
 ---
 
