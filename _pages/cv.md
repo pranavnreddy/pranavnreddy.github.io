@@ -79,5 +79,5 @@ Teaching
 
 Service and leadership
 ======
-* Member of the Society of Undergraduate Mathematics Students (SUMS)
+* Vice President of the Society of Undergraduate Mathematics Students (SUMS)
 * Member of IEEE-HKN
