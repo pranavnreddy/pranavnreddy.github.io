@@ -13,7 +13,7 @@ Some selected problems from Gerald Folland's _Real Analysis: Modern Techniques a
 ## Chapter 1 
 ### Problem 14
 
-Let \\(\alpha := \sup\{\mu(F):F\subseteq E, \mu(F)<\infty\}\\)
+Let \\(\alpha := \sup\\\{\mu(F):F\subseteq E, \mu(F)<\infty\\\}\\)
 It suffices to show that \\(\alpha = \infty\\).
 Suppose \\(\alpha < \infty\\).
 Choose \\(G_n\\) such that 
@@ -37,7 +37,7 @@ Let \\(G:=\bigcup_{n=1}^\infty G_n\\) so that \\(\lim_{n\to\infty}\mu(G_1\cup\do
 Thus, \\(\mu(G) = \alpha\\).
 
 
-Let \\(E' = E \,\backslash\, G\\) so \\(\mu(E') = \infty\\)
+Let \\(E' = E \,\backslash\, G\\) so \\(\mu(E') = \infty\\).
 By semifiniteness, there exists \\(F\subseteq E'\\) with \\(0<\mu(F) <\infty\\).
 Thus,
 <p>
