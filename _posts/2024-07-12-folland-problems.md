@@ -17,26 +17,34 @@ Let \\(\alpha := \sup\{\mu(F):F\subseteq E, \mu(F)<\infty\}\\)
 It suffices to show that \\(\alpha = \infty\\).
 Suppose \\(\alpha < \infty\\).
 Choose \\(G_n\\) such that 
-\[
+<p>
+\begin{equation*}
     \alpha -\frac{1}{n} < \mu(G_n) < \infty.
-\]
+\end{equation*}
+</p>
 Note that \\(\mu(G_1\cup\dots\cup G_n) < \infty\\), so 
-\[
+<p>
+\begin{equation*}
     \alpha - \frac{1}{n} < \mu(G_1\cup\dots\cup G_n) \leq \alpha.
-\]
+\end{equation*}
+</p>
 Let \\(G:=\bigcup_{n=1}^\infty G_n\\) so that \\(\lim_{n\to\infty}\mu(G_1\cup\dots\cup G_n) = \mu(G)\\) and
-\[
+<p>
+\begin{equation*}
     \alpha \geq \lim_{n\to\infty}\mu(G_1\cup\dots\cup G_n) = \lim_{n\to\infty}(\alpha-\tfrac{1}{n}) = \alpha.
-\]
+\end{equation*}
+</p>
 Thus, \\(\mu(G) = \alpha\\).
 
 
 Let \\(E' = E \,\backslash\, G\\) so \\(\mu(E') = \infty\\)
 By semifiniteness, there exists \\(F\subseteq E'\\) with \\(0<\mu(F) <\infty\\).
 Thus,
-\[
+<p>
+\begin{equation*}
     \alpha = \mu(G) <  \mu(G) + \mu(F)  = \mu(G\cup F) < \infty,
-\]
+\end{equation*}
+</p>
 but this contradictions the definition of \\(\alpha\\).
 Thus, \\(\alpha = \infty\\).
 
