@@ -44,24 +44,20 @@ Thus, \\(\alpha = \infty\\).
 ### Problem 17
 Firstly, note that if \\(A_1\cap A_2=\varnothing\\) and both are \\(\mu^*\\)-measurable,
 <p>
-\[
-\begin{aligned}
+\begin{align*}
     \mu^*(E\cap (A_1\cup A_2)) &= \mu^*((E\cap (A_1\cup A_2))\cap A_1) +\mu^*((E\cap (A_1\cup A_2))\cap A_1^\complement) \\
     &= \mu^*(E\cap A_1) + \mu^*(E\cap A_2).
-\end{aligned}
-\]
+\end{align*}
 </p>
 By induction, we have the result for finite collections of disjoint \\(\mu^*\\)-measurable sets.
 
 Then, note that for all \\(k\in\mathbb{N}\\),
 <p>
-\[
-    \begin{aligned}
+    \begin{align*}
     \sum_{j=1}^k\mu^*(E\cap A_j) = \mu^*\left(E\cap\bigcup_{j=1}^k A_j\right) 
     \leq \mu^*\left(E\cap\bigcup_{j=1}^\infty A_j\right)  
     \leq \sum_{j=1}^\infty\mu^*(E\cap A_j).
-    \end{aligned}
-    \]
+    \end{align*}
 </p>
 Letting \\(k\to\infty\\) we obtain the desired result.
 
