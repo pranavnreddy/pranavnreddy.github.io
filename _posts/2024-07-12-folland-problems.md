@@ -13,7 +13,9 @@ Some selected problems from Gerald Folland's _Real Analysis: Modern Techniques a
 ## Chapter 1 
 ### Problem 14
 
-Let \\(\alpha := \sup\\\{\mu(F):F\subseteq E, \mu(F)<\infty\\\}\\)
+**Problem:** If \\(\mu\\) is a semifinite measure and \\(\mu(E) = \infty\\), prove that for any \\(C > 0\\) there exists \\(F\subseteq E\\) such that \\(C < \mu(F) < \infty\\).
+
+**Solution:** Let \\(\alpha := \sup\\\{\mu(F):F\subseteq E, \mu(F)<\infty\\\}\\)
 It suffices to show that \\(\alpha = \infty\\).
 Suppose \\(\alpha < \infty\\).
 Choose \\(G_n\\) such that 
@@ -38,7 +40,7 @@ Thus, \\(\mu(G) = \alpha\\).
 
 
 Let \\(E' = E \,\backslash\, G\\) so \\(\mu(E') = \infty\\).
-By semifiniteness, there exists \\(F\subseteq E'\\) with \\(0<\mu(F) <\infty\\).
+Because \\(mu^*\\) is semifinite, there exists \\(F\subseteq E'\\) with \\(0<\mu(F) <\infty\\).
 Thus,
 <p>
 \begin{equation*}
@@ -50,7 +52,9 @@ Thus, \\(\alpha = \infty\\).
 
 
 ### Problem 17
-Firstly, note that if \\(A_1\cap A_2=\varnothing\\) and both are \\(\mu^*\\)-measurable,
+**Problem:** If \\(\mu^* \\) is an outer measure on \\(X\\), and \\(\\\{A_j\\\}_{j=1}^\infty\\) is a collection of disjoint \\(\mu^* \\)-measurable sets, prove that for any \\(E\subseteq X\\), \\(\mu^*\left(E\cap\bigcup_{j=1}^\infty A_j\right) = \sum_{j=1}^\infty \mu^*(E\cap A_j)\\).
+
+**Solution:** Firstly, note that if \\(A_1\cap A_2=\varnothing\\) and both are \\(\mu^*\\)-measurable,
 <p>
 \begin{align*}
     \mu^*(E\cap (A_1\cup A_2)) &= \mu^*((E\cap (A_1\cup A_2))\cap A_1) +\mu^*((E\cap (A_1\cup A_2))\cap A_1^\complement) \\
