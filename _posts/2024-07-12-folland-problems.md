@@ -15,7 +15,7 @@ Some selected problems from Gerald Folland's _Real Analysis: Modern Techniques a
 
 **Problem:** If \\(\mu\\) is a semifinite measure and \\(\mu(E) = \infty\\), prove that for any \\(C > 0\\) there exists \\(F\subseteq E\\) such that \\(C < \mu(F) < \infty\\).
 
-**Solution:** Let \\(\alpha := \sup\\\{\mu(F):F\subseteq E, \mu(F)<\infty\\\}\\).
+**Solution:** Let \\(\alpha := \sup\\\{\mu(F):F\subseteq E,\, \mu(F)<\infty\\\}\\).
 It suffices to show that \\(\alpha = \infty\\).
 Suppose \\(\alpha < \infty\\).
 Choose \\(G_n\\) such that 
