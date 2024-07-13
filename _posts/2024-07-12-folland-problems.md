@@ -52,7 +52,8 @@ Thus, \\(\alpha = \infty\\).
 
 
 ### Problem 17
-**Problem:** If \\(\mu^* \\) is an outer measure on \\(X\\), and \\(\\\{A_j\\\}_{j=1}^\infty\\) is a collection of disjoint \\(\mu^* \\)-measurable sets, prove that for any \\(E\subseteq X\\), \\(\mu^*\left(E\cap\bigcup_{j=1}^\infty A_j\right) = \sum_{j=1}^\infty \mu^*(E\cap A_j)\\).
+<p><strong>Problem:</strong> If \\(\mu^* \\) is an outer measure on \\(X\\), and \\(\{A_j\}_{j=1}^\infty\\) is a collection of disjoint \\(\mu^* \\)-measurable sets, prove that for any \\(E\subseteq X\\), \\(\mu^*\left(E\cap\bigcup_{j=1}^\infty A_j\right) = \sum_{j=1}^\infty \mu^*(E\cap A_j)\\).
+</p>
 
 **Solution:** Firstly, note that if \\(A_1\cap A_2=\varnothing\\) and both are \\(\mu^*\\)-measurable,
 <p>
