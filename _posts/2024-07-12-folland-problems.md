@@ -40,9 +40,8 @@ Thus, \\(\mu(G) = \alpha\\).
 
 
 Let \\(E' = E \,\backslash\, G\\) so \\(\mu(E') = \infty\\).
-Because \\(mu^*\\) is semifinite, there exists \\(F\subseteq E'\\) with \\(0<\mu(F) <\infty\\).
+<p>Because \\(mu^*\\) is semifinite, there exists \\(F\subseteq E'\\) with \\(0<\mu(F) <\infty\\).
 Thus,
-<p>
 \begin{equation*}
     \alpha = \mu(G) <  \mu(G) + \mu(F)  = \mu(G\cup F) < \infty,
 \end{equation*}
