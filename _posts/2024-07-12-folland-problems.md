@@ -40,7 +40,7 @@ Thus, \\(\mu(G) = \alpha\\).
 
 
 Let \\(E' = E \,\backslash\, G\\) so \\(\mu(E') = \infty\\).
-Because \\(mu^* \\) is semifinite, there exists \\(F\subseteq E'\\) with \\(0<\mu(F) <\infty\\).
+Because \\(\mu^*\\) is semifinite, there exists \\(F\subseteq E'\\) with \\(0<\mu(F) <\infty\\).
 Thus,
 <p>
 \begin{equation*}
@@ -53,7 +53,6 @@ Thus, \\(\alpha = \infty\\).
 
 ### Problem 17
 **Problem:** If \\(\mu^\*\\) is an outer measure on \\(X\\), and \\(\\\{A_j\\\}\_{j=1}^\infty\\) is a collection of disjoint \\(\mu^* \\)-measurable sets, prove that for any \\(E\subseteq X\\), \\(\mu^\*\left(E\cap\bigcup\_{j=1}^\infty A_j\right) = \sum\_{j=1}^\infty \mu^\*(E\cap A_j)\\).
-</p>
 
 **Solution:** Firstly, note that if \\(A_1\cap A_2=\varnothing\\) and both are \\(\mu^*\\)-measurable,
 <p>
