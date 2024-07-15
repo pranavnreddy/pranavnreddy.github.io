@@ -126,7 +126,7 @@ Similarly,
 Since $\mu^*(A\cap B^\complement)\leq \mu^*(A\cap E^\complement)$, we have $\mu^*(A\cap B^\complement) = \mu^*(A\cap E^\complement)$.
 We also used the fact that $E^\complement\setminus B^\complement = B\setminus E$.
 
-Lastly, by Proposition 1.13 every set in $\mathcal{A}$ is $\mu^*$-measurable. By Theorem 1.11 (Carath\'eodory's Theorem), the set of $\mu^*$-measurable sets forms a $\sigma$-algebra.
+Lastly, by Proposition 1.13 every set in $\mathcal{A}$ is $\mu^*$-measurable. By Theorem 1.11 (Carathéodory's Theorem), the set of $\mu^*$-measurable sets forms a $\sigma$-algebra.
 Thus, $B$ is $\mu^*$-measurable.
 Combining all of the results,
 \begin{align*}
@@ -146,7 +146,7 @@ Note that we use Proposition 1.13 in the last equality.
 By part (a), choose $A_n^{(k)}\in\mathcal{A}_\sigma$ so that $E_n\subseteq A_n^{(k)}$ and 
 \begin{align*}
 \mu^*(A_n^{(k)}) \leq \mu^*(E_k)+ \frac{1}{2^{k+n}}.\end{align*}
-By Theorem 1.11 (Carath\'eodory's Theorem) and Proposition 1.13, $E_n$ is $\mu^*$-measurable,
+By Theorem 1.11 (Carathéodory's Theorem) and Proposition 1.13, $E_n$ is $\mu^*$-measurable,
 Repeating a computation from part (b), we find that $\mu^*(A_n^{(k)} \setminus E_k) \leq \frac{1}{2^{k+n}}$.
 Then, $E \subseteq \bigcup_{k=1}^\infty A_n^{(k)}$, and
 \begin{align*}
@@ -175,7 +175,7 @@ Applying this fact, we find
     \mu^*(G_n\setminus E_n) &= \mu^*\left((G\setminus E)\cap\bigcup_{i=1}^n B_i \right) \leq \mu^*(G\setminus E) = 0.
 \end{align*}
 By part (b), $E_n$ is $\mu^*$-measurable.
-Since $E = \bigcup_{n=1}^\infty E_n$ and from Theorem 1.11 (Carath\'eodory's Theorem), we have that $E$ is $\mu^*$-measurable.
+Since $E = \bigcup_{n=1}^\infty E_n$ and from Theorem 1.11 (Carathéodory's Theorem), we have that $E$ is $\mu^*$-measurable.
 This completes the proof of the reverse direction.
 </li>
 </ol>
