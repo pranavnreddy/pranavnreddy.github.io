@@ -6,6 +6,7 @@ tags:
   - analysis
   - problems
   - Folland
+toc: true
 ---
 
 Some selected problems from Gerald Folland's _Real Analysis: Modern Techniques and Their Applications_ that I've done.
@@ -87,7 +88,9 @@ Letting \\(k\to\infty\\) we obtain the desired result.
 </ol>
 
 **Solution**:
-<ol type="a">
+<ol type="a" style = "li::marker {
+  font-weight: bold;
+}">
     <li>
         <p>
         From the definition, 
