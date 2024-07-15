@@ -74,3 +74,15 @@ Then, note that for all \\(k\in\mathbb{N}\\),
 Letting \\(k\to\infty\\) we obtain the desired result.
 
 
+
+### Problem 18
+**Problem:** Let $\mathcal{A}\subset P(X)$ be an algebra, $\mathcal{A}_\sigma$ the collection of countable unions of sets in $\mathcal{A}$, and $\mathcal{A}_{\sigma\delta}$ the collection of countable intersections of sets in $\mathcal{A}_\sigma$. Let $\mu_{0}$ be a premeasure on $\mathcal{A}$ and $\mu^*$ the induced outer measure.
+<ol type="a">
+<li> For any $E\subset X$ and $\epsilon > 0$ there exists $A\in \mathcal{A}_\sigma$ with $E\subset A$ and $\mu^*(A) \leq \mu^*(E) + \epsilon$
+</li>
+<li> If $\mu^{*}(E) < \infty$, then $E$ is $\mu^{*}$-measurable if and only if there exists $B\in A_{\sigma\delta}$ with $E\subset B$ and $\mu^{*}(B\setminus E) = 0$
+</li>
+
+<li> If $\mu_0$ is $\sigma$-finite, the restriction $\mu^{*}(E) < \infty$ in (b) is superfluous.
+</li>
+</ol>
