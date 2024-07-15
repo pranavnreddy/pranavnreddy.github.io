@@ -90,13 +90,14 @@ Letting \\(k\to\infty\\) we obtain the desired result.
 <ol type="a">
 <li> 
 From the definition, 
-
 \begin{align*}
-\mu^*(E) = \inf \left\{\sum_{n=1}^\infty \mu_0(A_n) : A_n\in\mathcal{A}, \, E \subseteq \bigcup_{n=1}^\infty A_n\right\}.\end{align*}
-Simply applying the definition of infimum yields a collection $\{A_n\}_{n=1}^\infty\subseteq\mathcal{A}$ with $E \subseteq \bigcup_{n=1}^\infty A_n$ and $\sum_{n=1}^\infty \mu_0(A_n) \leq \mu^*(E) + \varepsilon$.
-Then, $A:=\bigcup_{n=1}^\infty A_n\in \mathcal{A}_\sigma$ has 
+    \mu^*(E) = \inf \left\{\sum_{n=1}^\infty \mu_0(A_n) : A_n\in\mathcal{A}, \, E \subseteq \bigcup_{n=1}^\infty A_n\right\}.
+\end{align*}
+Simply applying the definition of infimum yields a collection $\{A_n\}_{n=1}^\infty\subseteq\mathcal{A}$ with $E \subseteq \bigcup_{n=1}^\infty A_n \in\mathcal{A}_\sigma$ and $\sum_{n=1}^\infty \mu_0(A_n) \leq \mu^*(E) + \varepsilon$.
+Then, by Proposition 1.13, we have
 \begin{align*}
-\mu^*(A) = \mu^*(\bigcup_{n=1}^\infty A_n) \leq \sum_{n=1}^\infty \mu_0(A_n) \leq \mu^*(E) + \varepsilon.\end{align*}
+    \mu^*\left(\bigcup_{n=1}^\infty A_n\right) \leq \sum_{n=1}^\infty \mu^*(A_n) =\sum_{n=1}^\infty \mu_0(A_n) \leq \mu^*(E) + \varepsilon.
+\end{align*}
 </li>
 <li> 
 Suppose $E$ is $\mu^*$-measurable.
