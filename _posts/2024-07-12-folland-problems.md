@@ -11,6 +11,8 @@ toc: true
 
 Some selected problems from Gerald Folland's _Real Analysis: Modern Techniques and Their Applications_ that I've done.
 
+{% include toc %}
+
 ## Chapter 1 
 ### Problem 14
 
