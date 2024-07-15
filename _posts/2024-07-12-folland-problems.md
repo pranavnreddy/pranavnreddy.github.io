@@ -90,10 +90,13 @@ Letting \\(k\to\infty\\) we obtain the desired result.
 <ol type="a">
 <li> 
 From the definition, 
-\[\mu^*(E) = \inf \left\{\sum_{n=1}^\infty \mu_0(A_n) : A_n\in\mathcal{A}, \, E \subseteq \bigcup_{n=1}^\infty A_n\right\}.\]
+
+\begin{align*}
+\mu^*(E) = \inf \left\{\sum_{n=1}^\infty \mu_0(A_n) : A_n\in\mathcal{A}, \, E \subseteq \bigcup_{n=1}^\infty A_n\right\}.\end{align*}
 Simply applying the definition of infimum yields a collection $\{A_n\}_{n=1}^\infty\subseteq\mathcal{A}$ with $E \subseteq \bigcup_{n=1}^\infty A_n$ and $\sum_{n=1}^\infty \mu_0(A_n) \leq \mu^*(E) + \varepsilon$.
 Then, $A:=\bigcup_{n=1}^\infty A_n\in \mathcal{A}_\sigma$ has 
-\[\mu^*(A) = \mu^*(\bigcup_{n=1}^\infty A_n) \leq \sum_{n=1}^\infty \mu_0(A_n) \leq \mu^*(E) + \varepsilon.\]
+\begin{align*}
+\mu^*(A) = \mu^*(\bigcup_{n=1}^\infty A_n) \leq \sum_{n=1}^\infty \mu_0(A_n) \leq \mu^*(E) + \varepsilon.\end{align*}
 </li>
 <li> 
 Suppose $E$ is $\mu^*$-measurable.
@@ -135,11 +138,13 @@ This completes the proof of the reverse direction.
 Let $\{B_n\}_{n=1}^\infty$ be a collection of sets in $\mathcal{A}$ such that $X = \bigcup_{n=1}^\infty B_n$ and $\mu_0(B_n)<\infty$ for all $n$, where $X$ is the ambient space.
 Now, suppose $E$ is $\mu^*$-measurable.
 Define $E_n:=E\cap \bigcup_{i=1}^n B_i$ so that
-\[\mu^*(E_n) = \mu^*\left(E\cap \bigcup_{i=1}^n B_i\right) \leq \mu^*\left( \bigcup_{i=1}^n B_i\right)  \leq \sum_{i=1}^n\mu^*(B_i) = \sum_{i=1}^n\mu_0(B_i) < \infty.\]
+\begin{align*}
+\mu^*(E_n) = \mu^*\left(E\cap \bigcup_{i=1}^n B_i\right) \leq \mu^*\left( \bigcup_{i=1}^n B_i\right)  \leq \sum_{i=1}^n\mu^*(B_i) = \sum_{i=1}^n\mu_0(B_i) < \infty.\end{align*}
 Note that we use Proposition 1.13 in the last equality.
 
 By part (a), choose $A_n^{(k)}\in\mathcal{A}_\sigma$ so that $E_n\subseteq A_n^{(k)}$ and 
-\[\mu^*(A_n^{(k)}) \leq \mu^*(E_k)+ \frac{1}{2^{k+n}}.\]
+\begin{align*}
+\mu^*(A_n^{(k)}) \leq \mu^*(E_k)+ \frac{1}{2^{k+n}}.\end{align*}
 By Theorem 1.11 (Carath\'eodory's Theorem) and Proposition 1.13, $E_n$ is $\mu^*$-measurable,
 Repeating a computation from part (b), we find that $\mu^*(A_n^{(k)} \setminus E_k) \leq \frac{1}{2^{k+n}}$.
 Then, $E \subseteq \bigcup_{k=1}^\infty A_n^{(k)}$, and
@@ -151,7 +156,8 @@ Then, $E \subseteq \bigcup_{k=1}^\infty A_n^{(k)}$, and
     &= \frac{1}{2^n}.
 \end{align*}
 Define $A = \bigcap_{n=1}^\infty \bigcup_{k=1}^\infty A_n^{(k)}$, so that
-\[\mu^*(A\setminus E) \leq \mu^*\left(\bigcup_{k=1}^\infty A_n^{(k)}\setminus E\right) \leq \frac{1}{2^n}\]
+\begin{align*}
+\mu^*(A\setminus E) \leq \mu^*\left(\bigcup_{k=1}^\infty A_n^{(k)}\setminus E\right) \leq \frac{1}{2^n}\end{align*}
 for all $n$.
 Thus, $\mu^*(A\setminus E) = 0$.
 This proves the forwards direction.
@@ -160,8 +166,9 @@ Suppose there exists $G\in \mathcal{A}_{\sigma\delta}$ such that $E\subseteq G$ 
 Let $A\subseteq X$ be any set.
 Define $E_n = E\cap\bigcup_{i=1}^n B_i$, and $G_n = G\cap\bigcup_{i=1}^n B_i$.
 Note that $G_n\in\mathcal{A}_{\sigma\delta}$ and that for any sets $A,B$, and $C$,
-\[(A\cap C)\setminus (B\cap C) = (A\cap C)\cap (B\cap C)^\complement =
-(A\cap B^\complement\cap C)\cup (A\cap C^\complement\cap C)=(A\setminus B)\cap C.\]
+\begin{align*}
+(A\cap C)\setminus (B\cap C) = (A\cap C)\cap (B\cap C)^\complement =
+(A\cap B^\complement\cap C)\cup (A\cap C^\complement\cap C)=(A\setminus B)\cap C.\end{align*}
 Applying this fact, we find 
 \begin{align*}
     \mu^*(G_n\setminus E_n) &= \mu^*\left((G\setminus E)\cap\bigcup_{i=1}^n B_i \right) \leq \mu^*(G\setminus E) = 0.
