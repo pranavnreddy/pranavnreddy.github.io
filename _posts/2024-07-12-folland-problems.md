@@ -76,7 +76,7 @@ Letting \\(k\to\infty\\) we obtain the desired result.
 
 
 ### Problem 18
-**Problem:** Let $\mathcal{A}\subset P(X)$ be an algebra, $\mathcal{A}_\sigma$ the collection of countable unions of sets in $\mathcal{A}$, and $\mathcal{A}_{\sigma\delta}$ the collection of countable intersections of sets in $\mathcal{A}_\sigma$. Let $\mu_{0}$ be a premeasure on $\mathcal{A}$ and $\mu^*$ the induced outer measure.
+**Problem:** Let $\mathcal{A}\subset P(X)$ be an algebra, $\mathcal{A}\_\sigma$ the collection of countable unions of sets in $\mathcal{A}$, and $\mathcal{A}\_{\sigma\delta}$ the collection of countable intersections of sets in $\mathcal{A}\_\sigma$. Let $\mu\_{0}$ be a premeasure on $\mathcal{A}$ and $\mu^\*$ the induced outer measure.
 <ol type="a">
 <li> For any $E\subset X$ and $\epsilon > 0$ there exists $A\in \mathcal{A}_\sigma$ with $E\subset A$ and $\mu^*(A) \leq \mu^*(E) + \epsilon$
 </li>
