@@ -33,10 +33,10 @@ Note that \\(\mu(G_1\cup\dots\cup G_n) < \infty\\), so
     \alpha - \frac{1}{n} < \mu(G_1\cup\dots\cup G_n) \leq \alpha.
 \end{equation*}
 </p>
-Let \\(G:=\bigcup_{n=1}^\infty G_n\\) so that \\(\lim_{n\to\infty}\mu(G_1\cup\dots\cup G_n) = \mu(G)\\) and
+Let \\(G:=\bigcup_{n=1}^\infty G_n\\) so that
 <p>
 \begin{equation*}
-    \alpha \geq \lim_{n\to\infty}\mu(G_1\cup\dots\cup G_n) = \lim_{n\to\infty}(\alpha-\tfrac{1}{n}) = \alpha.
+    \mu(G) = \lim_{n\to\infty}\mu(G_1\cup\dots\cup G_n) = \lim_{n\to\infty}(\alpha-\tfrac{1}{n}) = \alpha.
 \end{equation*}
 </p>
 Thus, \\(\mu(G) = \alpha\\).
