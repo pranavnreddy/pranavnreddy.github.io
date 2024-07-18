@@ -82,3 +82,9 @@ Service and leadership
 ======
 * Vice President of the Society of Undergraduate Mathematics Students (SUMS)
 * Member of IEEE-HKN
+
+<object class="pdf" 
+        data="https://pranavnreddy.github.io/files/Resume.pdf" 
+        width="800"
+        height="500">
+</object>
