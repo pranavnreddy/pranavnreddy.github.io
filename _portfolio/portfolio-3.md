@@ -10,7 +10,7 @@ Lacking exact interpolation conditions, I implemented a relaxation using the nec
 The semidefinite program instances were modeled using YALMIP and solved with MOSEK, and the design was left to me. 
 The image below shows the worst-case performance of different step sizes over a fixed number of iterations.
 
-![Performance of Different Activations](/images/WeaklyConvexRates.png)
+![Worst-Case Performance of Different Step Sizes](/images/WeaklyConvexRates.png)
 
 <object class="pdf" 
         data="https://pranavnreddy.github.io/files/WeaklyConvexReport.pdf" 
