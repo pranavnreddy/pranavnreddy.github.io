@@ -3,7 +3,6 @@ title: "Performance Estimation for Weakly Convex Functions"
 excerpt: "I built an classifier for the MNIST handwritten digits dataset using a linear least squares-based classifier. <br/><img src='/images/WeaklyConvexRates.png'>"
 collection: portfolio
 ---
- <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
 *Written for ECE 285 with professor [Yang Zheng](https://zhengy09.github.io/index.html). Source code can be accessed [here](https://github.com/pranavnreddy/ECE285Project). If the pdf fails to load below, the report can be downloaded [here](/files/WeaklyConvexReport.pdf).*
 
 I analyzed the worst-case performance of first-order methods on nonsmooth weakly convex functions using the performance estimation framework.
@@ -16,5 +15,5 @@ The image below shows the worst-case performance of different step sizes over a 
 <iframe class="pdf" 
                 src=
 "https://pranavnreddy.github.io/files/WeaklyConvexReport.pdf" 
-            style="max-width:100%;height:auto;">
+            width="800" height="800">
         </iframe>
