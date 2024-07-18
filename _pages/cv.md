@@ -86,5 +86,5 @@ Service and leadership
 <object class="pdf" 
         data="https://pranavnreddy.github.io/files/Resume.pdf" 
         width="800"
-        height="500">
+        height="800">
 </object>
