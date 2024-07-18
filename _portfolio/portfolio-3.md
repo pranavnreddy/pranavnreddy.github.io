@@ -12,8 +12,7 @@ The image below shows the worst-case performance of different step sizes over a 
 
 ![Worst-Case Performance of Different Step Sizes](/images/WeaklyConvexRates.png)
 
-<iframe class="pdf" 
-                src=
+<iframe src=
 "https://pranavnreddy.github.io/files/WeaklyConvexReport.pdf" 
             width="800" height="800">
         </iframe>
