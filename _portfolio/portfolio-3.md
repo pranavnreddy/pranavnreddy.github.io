@@ -12,8 +12,5 @@ The image below shows the worst-case performance of different step sizes over a 
 
 ![Performance of Different Activations](/images/WeaklyConvexRates.png)
 
-<object class="pdf" 
-            data=
-"https://pranavnreddy.github.io/files/WeaklyConvexReport.pdf" width="800"
-            height="500">
-    </object>
+<embed src="https://drive.google.com/viewerng/
+viewer?embedded=true&url=https://pranavnreddy.github.io/files/WeaklyConvexReport.pdf" width="500" height="375">
