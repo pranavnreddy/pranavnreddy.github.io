@@ -46,7 +46,7 @@ Even more bizarre, there is no norm on $\ell_0$ that makes it a complete vector 
 This can be seen [below](#a-vector-space-that-cannot-be-banach).
 
 ## There is no slowest rate of decay of an absolutely convergent series
-Suppose that there exists a sequence of positive numbers $\{a_n\}_{n\in\mathbb{N}}$ such that $\sum_{n\in\mathbb{N}}a_n|c_n| < \infty$ if and only if $\{c_n\}_{n\in\mathbb{N}}$ is bounded.
+Suppose that there exists a sequence of positive numbers $\{a\_n\}\_{n\in\mathbb{N}}$ such that $\sum_{n\in\mathbb{N}}a_n|c_n| < \infty$ if and only if $\{c_n\}_{n\in\mathbb{N}}$ is bounded.
 Note that this implies that $A := \sum_{n\in\mathbb{N}}a_n <\infty$.
 Then, then map 
 $$T:\{c_n\}_{n\in\mathbb{N}}\mapsto\{a_nc_n\}_{n\in\mathbb{N}}$$
