@@ -63,8 +63,6 @@ $$ \|T^{-1}(\chi_{\{n\}})\|_\infty = \|a_n^{-1}\chi_{\{n\}}\|_\infty = a_n^{-1}.
 Letting $n\to\infty$ we see that $T^{-1}$ is unbounded.
 This is a contradiction, so no such sequence $\{a_n\}_{n\in\N}$ can exist.
 
-<!--TODO-->
-
 ## A vector space that cannot be Banach
 Let $X$ be a a vector space of countably infinite dimension.
 That is, there exists $\{e_n\}_{n\in\mathbb{N}}$ such that for all $x\in X$ there exist unique $e_{n_1},\dots, e_{n_k}$ and $c_1,\dots,c_k$ so that $x = \sum_{j=1}^k c_j e_{n_j}$.

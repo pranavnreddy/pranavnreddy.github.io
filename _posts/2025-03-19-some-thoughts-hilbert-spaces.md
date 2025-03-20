@@ -1,7 +1,7 @@
 ---
 title: 'Some Notes on Hilbert Spaces'
-date: 2024-01-04
-permalink: /posts/2024/01/automorphisms-of-u1
+date: 2025-03-0177
+permalink: /posts/2025/03/notes-on-hilbert-spaces
 tags:
   - analysis
   - problems

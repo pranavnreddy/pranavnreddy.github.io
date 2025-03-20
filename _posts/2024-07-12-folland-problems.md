@@ -213,12 +213,124 @@ Suppose $H$ is a Hilbert space and $T\in L(H,H)$.
 </li>
 <li> $\| T^*\| = \|T\|$, $T^** = T$, $\|T^*T\| = \|T\|^2$ $T\mapsto T^*$ is conjugate-linear, and $(ST)^* = T^*S^*$.
 </li>
-<li> $\im T ^\perp$
+<li> $(\im T )^\perp = \ker T^*$ and $(\ker T)^\perp = \mathrm{cl}(\im T^*)$
+</li>
+<li> $T$ is unitary if and only if $T$ is invertible and $T^{-1} = T^*$.
 </li>
 </ol>
 
 **Solution**:
-TODO
+<ol type="a">
+<li>
+    <p>
+    Define $T^\top:H^*\to H^*$ by $T^\topf(x) = f(Tx)$.
+    Let $V:H\to H^*$ be the conjugate linear isomorphism.
+    Then $T^* = V^{-1}T^\top V$ and
+    \begin{align*}
+    \langle x, T^*y\rangle = \langle x, V^{-1}T^\dag V y\rangle = \langle x, V^{-1}(Vy\circ T)\rangle = (Vy\circ T)(x) = \langle Tx, y\rangle .
+    \end{align*}
+    </p>
+    <p>
+    Suppose $T^*_1, T^*_2$ are such that for all $x,y\in H$,
+    \begin{align*}
+    \langle Tx, y\rangle = \langle x, T_1^*y\rangle = \langle x, T_2^*y\rangle.
+    \end{align*}
+    Then,
+    \begin{align*}
+    0 = \langle Tx, y\rangle -\langle Tx, y\rangle = \langle x, T_1^*y\rangle - \langle x, T_2^*y\rangle = \langle x, (T_1^*-T_2^*)y\rangle.
+    \end{align*}
+    Since $x$ was arbitrary, $(T_1^*-T_2^*)y = 0$.
+    But since $y$ was also arbitrary, this implies that $T_1^*-T_2^* = 0$.
+    </p>
+</li>
+<li> 
+    <p>
+    Note that 
+    \begin{align*}
+    \langle T^*x, y\rangle = \overline{\langle y,T^*x\rangle} = \overline{\langle Ty,x\rangle} = \langle x,Ty\rangle.
+    \end{align*}
+    Thus, $(T^*)^* = T$.
+    </p>
+    <p>
+    Then,
+    \begin{align*}
+    \|Tx\|^2 = \langle Tx, Tx\rangle = \langle x, T^*Tx\rangle  \leq \|x\|\|T^*Tx\|\leq \|T^*\|\|x\|\cdot \|Tx\|
+    \end{align*}
+    Thus, $\|Tx\|\leq \|T^*\|\|x\|$, so $\|T\|\leq \|T^*\|$.
+    Using the fact that $(T^*)^* = T$, we see that $\|T\| = \|T^*$.
+    </p>
+    <p>
+    Also,
+    \begin{align*}
+    \|T^*Tx\|^2 = \langle T^*Tx, T^*Tx\rangle = \langle TT^*Tx, Tx\rangle \leq \|T\|^2\|T^*Tx\|\|x\|.
+    \end{align*}
+    Thus, $\|T^*T\|\leq\|T\|^2$.
+    Moreover,
+    \begin{align*}
+    \|Tx\|^2 = \langle Tx, Tx\rangle = \langle x, T^*Tx\rangle  \leq \|T^*T\|\|x\|^2.
+    \end{align*}
+    Thus, $\|T\|^2\leq \|T^*T\|$ so $\|T\|^2 = \|T^*T\|$.
+    </p>
+    <p>
+    Also,
+    \begin{align*}
+    \langle x, (\overline{a}S^*+\overline{b}T^*)y\rangle = \langle x,\overline{a}S^*y\rangle + \langle x, \overline{b}T^*y\rangle = \langle \overline{a}x,S^*y\rangle + \langle \overline{b}x, T^*y\rangle &= \langle \overline{a}Sx, y\rangle + \langle \overline{b}Tx, y\rangle \\
+    &= \langle (aS+bT)x, y\rangle.
+    \end{align*}
+    Thus, $({a}S+{b}T)^* = \overline{a}S^*+\overline{b}T^*$.
+    </p>
+    <p>
+    Lastly,
+    \begin{align*}
+    \langle x, T^*S^*y\rangle = \langle Tx, S^*y\rangle = \langle STx, y\rangle,
+    \end{align*}
+    so $(ST)^* = T^*S^*$.
+    </p>
+</li>
+<li> 
+<p>
+Note that 
+\begin{align*}
+  R(T)^\perp = \left\{ y\in H : \langle Tx, y\rangle = 0 \ \forall \ x\in H \right\} &= \left\{ y\in H : \langle x, T^*y\rangle = 0 \ \forall \ x\in H \right\} \\
+  &= \left\{ y\in H :  T^*y = 0 \right\} \\
+  &= N(T^*).
+\end{align*}
+We used the fact that $\langle x, y\rangle =0$ for all $x$ if and only if $y = 0$.
+</p>
+<p>
+Now, applying the previous result and the fact that $(T^*)^* = T$, we see that $R(T^*)^\perp = N(T)$.
+Thus, $(R(T^*)^\perp)^\perp = N(T)^\perp$.
+By problem 56, $(R(T^*)^\perp)^\perp$ is the smallest closed subspace containing $R(T^*)$.
+Since $R(T^*)$ is a subspace, and the closure of a subspace is still a subspace, we have that $(R(T^*)^\perp)^\perp = \overline{R(T^*)}$.
+Thus, $N(T)^\perp = \overline{R(T^*)}$.
+</p>
+</li>
+<li>
+    <p>
+    Suppose $T$ is unitary.
+    Then, for all $x,y$,
+    \begin{align*}
+    \langle x, y\rangle = \langle Tx, Ty\rangle = \langle x, T^*Ty\rangle.
+    \end{align*}
+    This implies that $0 = \langle x, T^*Ty -y\rangle$ for all $x$.
+    Choosing $x = T^*Ty -y$ shows that $T^*Ty -y = 0$.
+    Thus, $T^*Ty = y$ for all $y$, so $T^*T = I$.
+    But then, since $T$ is unitary and thus invertible,
+    \begin{align*}
+    T^{-1} = T^*T T^{-1} = T^*.
+    \end{align*}
+    </p>
+    <p>
+    Now suppose $T^* = T^{-1}$.
+    Then,
+    \begin{align*}
+    \langle Tx, Ty\rangle = \langle x, T^*Ty\rangle = \langle x,y\rangle.
+    \end{align*}
+    This shows that $T$ is unitary.
+    </p>
+</li>
+</ol>
+
 
 ## Problem 67 (Mean Ergodic Theorem)
 **Problem:**
