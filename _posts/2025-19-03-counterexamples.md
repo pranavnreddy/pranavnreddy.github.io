@@ -8,9 +8,12 @@ tags:
   - random
 toc: true
 ---
-Keeping track of some good counterexamples when needed.
-
 {% include toc %}
+
+Keeping track of some good counterexamples when needed.
+I've roughly filtered them by topic for my own convenience.
+Let me know if you spot any typos.
+
 
 # Real Analysis
 ## Lebesgue null set that is also comeager
@@ -46,13 +49,13 @@ Even more bizarre, there is no norm on $\ell_0$ that makes it a complete vector 
 This can be seen [below](#a-vector-space-that-cannot-be-banach).
 
 ## There is no slowest rate of decay of an absolutely convergent series
-Suppose that there exists a sequence of positive numbers $\{a\_n\}\_{n\in\mathbb{N}}$ such that $\sum_{n\in\mathbb{N}}a_n|c_n| < \infty$ if and only if $\{c_n\}_{n\in\mathbb{N}}$ is bounded.
-Note that this implies that $A := \sum_{n\in\mathbb{N}}a_n <\infty$.
+Suppose that there exists a sequence of positive numbers $\{a\_n\}\_{n\in\mathbb{N}}$ such that $\sum_{n\in\mathbb{N}}a_n|c_n| < \infty$ if and only if $\{c\_n\}\_{n\in\mathbb{N}}$ is bounded.
+Note that this implies that $A := \sum\_{n\in\mathbb{N}}a\_n <\infty$.
 Then, then map 
-$$T:\{c_n\}_{n\in\mathbb{N}}\mapsto\{a_nc_n\}_{n\in\mathbb{N}}$$
+$$T:\{c\_n\}\_{n\in\mathbb{N}}\mapsto\{a\_nc\_n\}\_{n\in\mathbb{N}}$$
 is an invertible linear map from $\ell^\infty$ to $\ell^1$.
 Also,
-$$ \|Tx\|_1 = \sum_{n=1}^\infty a_n |x_n| \leq A\|x\|_\infty$$
+$$ \|Tx\|\_1 = \sum\_{n=1}^\infty a\_n |x\_n| \leq A\|x\|\_\infty$$
 so $T$ is bounded.
 Therefore, $T^{-1}$ is bounded, since we are working with Banach spaces.
 Note that by the previous part $\ell_0$ is dense in $\ell^1$, and $T(\ell_0)= \ell_0$.
