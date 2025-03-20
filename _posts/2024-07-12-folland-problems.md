@@ -13,8 +13,8 @@ Some selected problems from Gerald Folland's _Real Analysis: Modern Techniques a
 
 {% include toc %}
 
-## Chapter 1 
-### Problem 14
+# Chapter 1 
+## Problem 14
 
 **Problem:** If \\(\mu\\) is a semifinite measure and \\(\mu(E) = \infty\\), prove that for any \\(C > 0\\) there exists \\(F\subseteq E\\) such that \\(C < \mu(F) < \infty\\).
 
@@ -54,7 +54,7 @@ but this contradictions the definition of \\(\alpha\\).
 Thus, \\(\alpha = \infty\\).
 
 
-### Problem 17
+## Problem 17
 **Problem:** If \\(\mu^\*\\) is an outer measure on \\(X\\), and \\(\\\{A_j\\\}\_{j=1}^\infty\\) is a collection of disjoint \\(\mu^* \\)-measurable sets, prove that for any \\(E\subseteq X\\), \\(\mu^\*\left(E\cap\bigcup\_{j=1}^\infty A_j\right) = \sum\_{j=1}^\infty \mu^\*(E\cap A_j)\\).
 
 **Solution:** Firstly, note that if \\(A_1\cap A_2=\varnothing\\) and both are \\(\mu^*\\)-measurable,
@@ -78,7 +78,7 @@ Letting \\(k\to\infty\\) we obtain the desired result.
 
 
 
-### Problem 18
+## Problem 18
 **Problem:** Let $\mathcal{A}\subset P(X)$ be an algebra, $\mathcal{A}\_\sigma$ the collection of countable unions of sets in $\mathcal{A}$, and $\mathcal{A}\_{\sigma\delta}$ the collection of countable intersections of sets in $\mathcal{A}\_\sigma$. Let $\mu\_{0}$ be a premeasure on $\mathcal{A}$ and $\mu^*$ the induced outer measure.
 <ol type="a">
 <li> For any $E\subset X$ and $\varepsilon > 0$ there exists $A\in \mathcal{A}_\sigma$ with $E\subset A$ and $\mu^*(A) \leq \mu^*(E) + \varepsilon$.
@@ -199,3 +199,32 @@ Letting \\(k\to\infty\\) we obtain the desired result.
         </p>
     </li>
 </ol>
+
+
+
+# Chapter 5
+AKA: I got bored with measure theory AKA functional ``analysis'' (algebra).
+
+## Problem 57
+**Problem:**
+Suppose $H$ is a Hilbert space and $T\in L(H,H)$.
+<ol type="a">
+<li> There exists a unique $T^*\in L(H,H)$ such that $\langle Tx, y\rangle = \langle x, T^*y \rangle$ for all $x,y\in H$. $T^*$ is called the <strong>adjoint</strong> of $T$
+</li>
+<li> $\| T^*\| = \|T\|$, $T^** = T$, $\|T^*T\| = \|T\|^2$ $T\mapsto T^*$ is conjugate-linear, and $(ST)^* = T^*S^*$.
+</li>
+<li> $\im T ^\perp$
+</li>
+</ol>
+
+**Solution**:
+TODO
+
+## Problem 67 (Mean Ergodic Theorem)
+**Problem:**
+Let $U$ be a unitary operator on a Hilbert space $H$.
+Let $M = \{x \in H: Ux = x\}$ (these are the fixed points of $U$).
+Show that if $S_n = \frac{1}{n}\sum_{k=0}^{n-1} U^k$, then $S_n$ converges to $\Pi_M$ (the orthogonal projection onto $M$) in the strong operator topology.
+
+**Solution:**
+We need to first show that $\Pi_M$ exists.
