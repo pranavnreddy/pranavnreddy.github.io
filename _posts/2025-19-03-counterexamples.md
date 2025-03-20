@@ -21,7 +21,7 @@ Moreover, since $\mathbb{Q}\subseteq Q_k$, $Q_k$ is dense.
 It is also open since it is a union of open sets.
 Let $Q = \bigcap_{k\in\mathbb{N}}Q_k$, so that $m(Q) = 0$ and $Q$ is dense, by the Baire Category Theorem.
 Moreover,
-$$Q^\complement = \left( \bigcap_{k\in\N}Q_k \right)^\complement =\bigcup_{k\in\N}Q_k^\complement.$$
+$$Q^\complement = \left( \bigcap_{k\in\mathbb{N}}Q_k \right)^\complement =\bigcup_{k\in\mathbb{N}}Q_k^\complement.$$
 Since $Q_k$ is open, $Q_k^\complement$ is closed.
 Also let $x\in Q_k^\complement$.
 Since $Q_k$ is dense, there exists $q$ such that $|x-q| < \varepsilon$, so $Q_k^\complement$ has empty interior.
@@ -43,7 +43,7 @@ Yet another perspective on this is that $\mathrm{cl}(\ell_0) = \ell^2$, so $((\e
 >This is an example of why closedness is necessary for orthogonal projections.
 
 Even more bizarre, there is no norm on $\ell_0$ that makes it a complete vector space.
-This can be seen in **hyperlink coming soon**
+This can be seen [below](#a-vector-space-that-cannot-be-banach).
 
 ## There is no slowest rate of decay of an absolutely convergent series
 Suppose that there exists a sequence of positive numbers $\{a_n\}_{n\in\mathbb{N}}$ such that $\sum_{n\in\mathbb{N}}a_n|c_n| < \infty$ if and only if $\{c_n\}_{n\in\mathbb{N}}$ is bounded.
@@ -61,7 +61,7 @@ However, $\ell_0$ is not dense in $\ell^\infty$, so such an isomorphism cannot e
 More concretely, note that $\|\chi_{\{n\}}\|_1 = 1$, but
 $$ \|T^{-1}(\chi_{\{n\}})\|_\infty = \|a_n^{-1}\chi_{\{n\}}\|_\infty = a_n^{-1}.$$
 Letting $n\to\infty$ we see that $T^{-1}$ is unbounded.
-This is a contradiction, so no such sequence $\{a_n\}_{n\in\N}$ can exist.
+This is a contradiction, so no such sequence $\{a_n\}_{n\in\mathbb{N}}$ can exist.
 
 ## A vector space that cannot be Banach
 Let $X$ be a a vector space of countably infinite dimension.
