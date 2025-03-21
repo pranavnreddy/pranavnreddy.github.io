@@ -123,7 +123,7 @@ The map from $\mathbb{R}^2\to\mathbb{R}^2$ defined by $\begin{bmatrix}
 # Group Theory
 ## Nonabelian group where every subgroup is normal
 Of course, an example of this is $Q_8$, the quaternion group.
-The nontrivial subgroups are $\\{\pm 1\\}, \\{\pm 1, \pm i\\}, \\{\pm 1, \pm j\\}, \\{\pm 1, \pm k\\}$.
+The nontrivial subgroups are $\\{\pm 1\\}, \\{\pm 1, \pm i\\}, \\{\pm 1, \pm j\\}$, and $\\{\pm 1, \pm k\\}$.
 > Almost as if this group was designed to be a counterexample.
 
 
