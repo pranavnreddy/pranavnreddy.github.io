@@ -54,7 +54,7 @@ Then, the map
 $$T:\{c_n\}_{n\in\mathbb{N}}\mapsto\{a_nc_n\}_{n\in\mathbb{N}}$$
 is an invertible linear map from $\ell^\infty$ to $\ell^1$.
 Also,
-$$ \|Tx\|\_1 = \sum_{n=1}^\infty a_n |x_n| \leq A\|x\|_\infty$$
+$$ \|Tx\|_1 = \sum_{n=1}^\infty a_n |x_n| \leq A\|x\|_\infty$$
 so $T$ is bounded.
 Therefore, $T^{-1}$ is bounded, since we are working with Banach spaces.
 Note that by the previous part $\ell_0$ is dense in $\ell^1$, and $T(\ell_0)= \ell_0$.
