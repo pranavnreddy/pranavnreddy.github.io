@@ -78,18 +78,21 @@ Then, $X = \bigcup_{n\in\mathbb{N}}A_n$, but this contradicts the Baire Category
 
 ## Uniform Limit of Differentiable Function is not Differentiable
 Define
+
 $$f_n(x)=\begin{cases}
 -1, & x \leq -\frac{1}{n} \\
 nx, & x \in \left[-\frac{1}{n},\frac{1}{n}\right] \\
 1, & x \geq \frac{1}{n}
 \end{cases}$$
-Then, we define $F_n(x) = \int_{0}^x f_n(x)\,dx$.
-Then,
+
+Then, we define $F_n(x) = \int_{0}^x f_n(x)\,dx$, so that 
+
 $$ F_n(x) = \begin{cases}
     \frac{1}{2n}-x, & x\leq -\frac{1}{n} \\
     \frac{n}{2}x^2, & x \in \left[-\frac{1}{n},\frac{1}{n}\right] \\
     x - \frac{1}{2n}, & x\geq \frac{1}{n}.
 \end{cases}$$
+
 Note that $F_n\in C^1$, and $|F_n(x) - |x| | \leq \frac{1}{n}$ for all $x$.
 Thus, $F_n\to |x|$ uniformly.
 
@@ -102,7 +105,9 @@ $$f(x) = \sum_{n=1}^{\infty} n\chi_{[n,n+\frac{1}{n^3}]}.$$
 
 # Linear Algebra
 ## Diagonalizability and invertibility have no relation
+<p>
 Consider $\begin{bmatrix}1 & 0 \\ 0 & 0 \end{bmatrix}$ and $\begin{bmatrix}1 & 1 \\ 0 & 1 \end{bmatrix}$.
+</p>
 
 ## Matrix with no invariant subspace
 The map from $\mathbb{R}^2\to\mathbb{R}^2$ defined by $\begin{bmatrix}
