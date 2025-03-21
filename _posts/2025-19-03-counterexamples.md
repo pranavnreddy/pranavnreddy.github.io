@@ -49,7 +49,7 @@ Even more bizarre, there is no norm on $\ell_0$ that makes it a complete vector 
 This can be seen [below](#a-vector-space-that-cannot-be-banach).
 
 ## There is no slowest rate of decay of an absolutely convergent series
-Suppose that there exists a sequence of positive numbers $\\{a_n\\}\_{n\in\mathbb{N}}$ such that $\sum_{n\in\mathbb{N}}a_n|c_n| < \infty$ if and only if $\{c_n\}\_{n\in\mathbb{N}}$ is bounded.
+Suppose that there exists a sequence of positive numbers $\\{a_n\\}\_{n\in\mathbb{N}}$ such that $\sum_{n\in\mathbb{N}}a_n|c_n| < \infty$ if and only if $\\{c_n\\}\_{n\in\mathbb{N}}$ is bounded.
 Note that this implies that $A := \sum\_{n\in\mathbb{N}}a\_n <\infty$.
 Then, the map 
 $$T:\{c_n\}_{n\in\mathbb{N}}\mapsto\{a_nc_n\}_{n\in\mathbb{N}}$$
@@ -61,7 +61,7 @@ Therefore, $T^{-1}$ is bounded, since we are working with Banach spaces.
 Note that by the previous part $\ell_0$ is dense in $\ell^1$, and $T(\ell_0)= \ell_0$.
 However, $\ell_0$ is not dense in $\ell^\infty$, so such an isomorphism cannot exist.
 
-More concretely, note that $\|\chi\_{\{n\}}\|_1 = 1$, but
+More concretely, note that $\|\chi_{\\{n\\}}\|_1 = 1$, but
 $$ \|T^{-1}(\chi_{\{n\}})\|_\infty = \|a_n^{-1}\chi_{\{n\}}\|_\infty = a_n^{-1}.$$
 Letting $n\to\infty$ we see that $T^{-1}$ is unbounded.
 This is a contradiction, so no such sequence $\{a_n\}_{n\in\mathbb{N}}$ can exist.
