@@ -61,7 +61,7 @@ Therefore, $T^{-1}$ is bounded, since we are working with Banach spaces.
 Note that by the previous part $\ell_0$ is dense in $\ell^1$, and $T(\ell_0)= \ell_0$.
 However, $\ell_0$ is not dense in $\ell^\infty$, so such an isomorphism cannot exist.
 
-More concretely, note that $\|\chi_{\\{n\\}}\|_1 = 1$, but
+More concretely, note that $\|\chi_{\\{n\\}}\|\_1 = 1$, but
 $$ \|T^{-1}(\chi_{\{n\}})\|_\infty = \|a_n^{-1}\chi_{\{n\}}\|_\infty = a_n^{-1}.$$
 Letting $n\to\infty$ we see that $T^{-1}$ is unbounded.
 This is a contradiction, so no such sequence $\{a_n\}_{n\in\mathbb{N}}$ can exist.
