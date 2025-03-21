@@ -67,7 +67,7 @@ This is a contradiction, so no such sequence $\\{a_n\\}_{n\in\mathbb{N}}$ can ex
 
 ## A vector space that cannot be Banach
 Let $X$ be a a vector space of countably infinite dimension.
-That is, there exists $\{e_n\}\_{n\in\mathbb{N}}$ such that for all $x\in X$ there exist unique $e_{n_1},\dots, e_{n_k}$ and $c_1,\dots,c_k$ so that $x = \sum_{j=1}^k c_j e_{n_j}$.
+That is, there exists $\\{e_n\\}\_{n\in\mathbb{N}}$ such that for all $x\in X$ there exist unique $e_{n_1},\dots, e_{n_k}$ and $c_1,\dots,c_k$ so that $x = \sum_{j=1}^k c_j e_{n_j}$.
 Suppose there exists a norm on $X$ such that $X$ is complete.
 Then, consider the subspaces 
 $$A_n := \mathrm{span}\{e_1,\dots,e_n\}.$$
@@ -102,7 +102,7 @@ Thus, $F_n\to |x|$ uniformly.
 
 ## $L^1\cap L^2_{\text{loc}} \not\subseteq L^2$
 Consider
-$$f(x) = \sum_{n=1}^{\infty} n\chi_{[n,n+\frac{1}{n^3}]}.$$
+$$f = \sum_{n=1}^{\infty} n\chi_{[n,n+\frac{1}{n^3}]}.$$
 > This is basically saying that being $L^1$ on the whole space and $L^2$ on every bounded set is not sufficient to be $L^2$
 
 # Linear Algebra
