@@ -36,17 +36,16 @@ Thus, $Q^\complement$ is a meager subset of $\mathbb{R}$ whose complement has me
 This is a weird space.
 Firstly, $\ell_0\subseteq\bigcap_{p\in (0,\infty]}\ell^p$: it is $\ell^p$ for every single $p$.
 Also, every element of $\ell^p$ is a limit of a sequence in $\ell_0$ (for $p<\infty$).
-Clearly, $\ell_0$ is not Banach in any of the usual norms.
+However, there is no norm on $\ell_0$ that makes it a complete vector space.
+This can be seen [below](#a-vector-space-that-cannot-be-banach).
 
 Another weird property: $\ell_0$ has empty interior when viewed as a subset of $\ell^p$.
 
-Also, when viewed as a subspace of $\ell^2$, there is _no_ orthogonal projection onto $\ell_0$. To see this note that $\inf_{y\in\ell_0}\|x-y\|_2 = 0$ for all $x\in\ell^2$, but if $x\notin\ell_0$ then this infimum is not achieved.
+Also, when viewed as a subspace of $\ell^2$, there is _no_ orthogonal projection onto $\ell_0$. To see this note that $\inf_{y\in\ell_0}\\|x-y\\|_2 = 0$ for all $x\in\ell^2$, but if $x\notin\ell_0$ then this infimum is not achieved.
 Alternatively note that if $x\in(\ell_0)^\perp$, then $x$ must be perpendicular to each of the canonical basis vectors, and thus $x = 0$.
 Yet another perspective on this is that $\mathrm{cl}(\ell_0) = \ell^2$, so $((\ell_0)^\perp)^\perp = \ell^2$.
 >This is an example of why closedness is necessary for orthogonal projections.
 
-Even more bizarre, there is no norm on $\ell_0$ that makes it a complete vector space.
-This can be seen [below](#a-vector-space-that-cannot-be-banach).
 
 ## There is no slowest rate of decay of an absolutely convergent series
 Suppose that there exists a sequence of positive numbers $\\{a_n\\}\_{n\in\mathbb{N}}$ such that $\sum_{n\in\mathbb{N}}a_n|c_n| < \infty$ if and only if $\\{c_n\\}\_{n\in\mathbb{N}}$ is bounded.
@@ -55,13 +54,13 @@ Then, the map
 $$T:\{c_n\}_{n\in\mathbb{N}}\mapsto\{a_nc_n\}_{n\in\mathbb{N}}$$
 is an invertible linear map from $\ell^\infty$ to $\ell^1$.
 Also,
-$$ \|Tx\|_1 = \sum\_{n=1}^\infty a_n |x_n| \leq A\|x\|_\infty$$
+$$ \|Tx\|\_1 = \sum_{n=1}^\infty a_n |x_n| \leq A\|x\|_\infty$$
 so $T$ is bounded.
 Therefore, $T^{-1}$ is bounded, since we are working with Banach spaces.
 Note that by the previous part $\ell_0$ is dense in $\ell^1$, and $T(\ell_0)= \ell_0$.
 However, $\ell_0$ is not dense in $\ell^\infty$, so such an isomorphism cannot exist.
 
-More concretely, note that $\|\chi_{\\{n\\}}\|\_1 = 1$, but
+More concretely, note that $\\|\chi_{\\{n\\}}\\|\_1 = 1$, but
 $$ \|T^{-1}(\chi_{\{n\}})\|_\infty = \|a_n^{-1}\chi_{\{n\}}\|_\infty = a_n^{-1}.$$
 Letting $n\to\infty$ we see that $T^{-1}$ is unbounded.
 This is a contradiction, so no such sequence $\\{a_n\\}_{n\in\mathbb{N}}$ can exist.
