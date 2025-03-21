@@ -113,15 +113,17 @@ Consider $\begin{bmatrix}1 & 0 \\ 0 & 0 \end{bmatrix}$ and $\begin{bmatrix}1 & 1
 </p>
 
 ## Matrix with no invariant subspace
+<p>
 The map from $\mathbb{R}^2\to\mathbb{R}^2$ defined by $\begin{bmatrix}
 \frac{\sqrt{2}}{2} & -\frac{\sqrt{2}}{2} \\ \frac{\sqrt{2}}{2} & \frac{\sqrt{2}}{2} \end{bmatrix}$ (rotation by $90^\circ$) has no nontrivial invariant subspace.
+</p>
 
 > Algebraic completeness of the base field is important here.
 
 # Group Theory
 ## Nonabelian group where every subgroup is normal
 Of course, an example of this is $Q_8$, the quaternion group.
-The nontrivial subgroups are $\{\pm 1\}, \{\pm 1, \pm i\}, \{\pm 1, \pm j\}, \{\pm 1, \pm k\}$.
+The nontrivial subgroups are $\\{\pm 1\\}, \\{\pm 1, \pm i\\}, \\{\pm 1, \pm j\\}, \\{\pm 1, \pm k\\}$.
 > Almost as if this group was designed to be a counterexample.
 
 
