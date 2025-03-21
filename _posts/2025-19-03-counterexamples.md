@@ -64,7 +64,7 @@ However, $\ell_0$ is not dense in $\ell^\infty$, so such an isomorphism cannot e
 More concretely, note that $\|\chi_{\\{n\\}}\|\_1 = 1$, but
 $$ \|T^{-1}(\chi_{\{n\}})\|_\infty = \|a_n^{-1}\chi_{\{n\}}\|_\infty = a_n^{-1}.$$
 Letting $n\to\infty$ we see that $T^{-1}$ is unbounded.
-This is a contradiction, so no such sequence $\{a_n\}_{n\in\mathbb{N}}$ can exist.
+This is a contradiction, so no such sequence $\\{a_n\\}_{n\in\mathbb{N}}$ can exist.
 
 ## A vector space that cannot be Banach
 Let $X$ be a a vector space of countably infinite dimension.
