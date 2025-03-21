@@ -68,7 +68,7 @@ This is a contradiction, so no such sequence $\\{a_n\\}_{n\in\mathbb{N}}$ can ex
 
 ## A vector space that cannot be Banach
 Let $X$ be a a vector space of countably infinite dimension.
-That is, there exists $\{e_n\}_{n\in\mathbb{N}}$ such that for all $x\in X$ there exist unique $e_{n_1},\dots, e_{n_k}$ and $c_1,\dots,c_k$ so that $x = \sum_{j=1}^k c_j e_{n_j}$.
+That is, there exists $\\{e_n\\}\_{n\in\mathbb{N}}$ such that for all $x\in X$ there exist unique $e_{n_1},\dots, e_{n_k}$ and $c_1,\dots,c_k$ so that $x = \sum_{j=1}^k c_j e_{n_j}$.
 Suppose there exists a norm on $X$ such that $X$ is complete.
 Then, consider the subspaces 
 $$A_n := \mathrm{span}\{e_1,\dots,e_n\}.$$
@@ -77,25 +77,28 @@ It also has empty interior, since $(A_n + \varepsilon e_{n+1}) \cap A_n = \varno
 Then, $X = \bigcup_{n\in\mathbb{N}}A_n$, but this contradicts the Baire Category Theorem.
 
 ## Uniform Limit of Differentiable Function is not Differentiable
+<p>
 Define
-
-$$f_n(x)=\begin{cases}
+\begin{equation*}
+f_n(x)=\begin{cases}
 -1, & x \leq -\frac{1}{n} \\
 nx, & x \in \left[-\frac{1}{n},\frac{1}{n}\right] \\
 1, & x \geq \frac{1}{n}
-\end{cases}$$
-
+\end{cases}
+\end{equation*}
+</p>
+<p>
 Then, we define $F_n(x) = \int_{0}^x f_n(x)\,dx$, so that 
-
-$$ F_n(x) = \begin{cases}
+\begin{equation*}
+F_n(x) = \begin{cases}
     \frac{1}{2n}-x, & x\leq -\frac{1}{n} \\
     \frac{n}{2}x^2, & x \in \left[-\frac{1}{n},\frac{1}{n}\right] \\
     x - \frac{1}{2n}, & x\geq \frac{1}{n}.
-\end{cases}$$
-
+\end{cases}
+\end{equation*}
 Note that $F_n\in C^1$, and $|F_n(x) - |x| | \leq \frac{1}{n}$ for all $x$.
 Thus, $F_n\to |x|$ uniformly.
-
+</p>
 > There are probably simpler examples.
 
 ## $L^1\cap L^2_{\text{loc}} \not\subseteq L^2$
