@@ -32,6 +32,6 @@ However, nothing here was special about the role of $A$ and $B$, so reversing th
 Applying the [Cantor-Schröder-Bernstein theorem](https://en.wikipedia.org/wiki/Schr%C3%B6der%E2%80%93Bernstein_theorem) completes the result.
 
 ## Corollary: $\ell^2(A) \cong \ell^2(B)$ if and only if $|A| = |B|$
-This follows from noting that $\\{\chi_{\{\alpha\}}\\}\_{\alpha\in A}$ and $\\{\chi_{\{\beta\}}\\}\_{\beta\in B}$ form orthonormal bases of their respective spaces.
+This follows from noting that $\\{\chi_{\\{\alpha\\}}\\}\_{\alpha\in A}$ and $\\{\chi_{\\{\beta\\}}\\}\_{\beta\in B}$ form orthonormal bases of their respective spaces.
 
 # Von Neumann's Mean Ergodic Theorem
