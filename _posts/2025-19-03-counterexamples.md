@@ -28,7 +28,7 @@ $$Q^\complement = \left( \bigcap_{k\in\mathbb{N}}Q_k \right)^\complement =\bigcu
 Since $Q_k$ is open, $Q_k^\complement$ is closed.
 Also let $x\in Q_k^\complement$.
 Since $Q_k$ is dense, there exists $q$ such that $|x-q| < \varepsilon$, so $Q_k^\complement$ has empty interior.
-Thus, $Q^\complement$ is a meagre subset of $\mathbb{R}$ whose complement has measure 0.
+Thus, $Q^\complement$ is a meager subset of $\mathbb{R}$ whose complement has measure 0.
 
 > This is not really surprising once you realize that topological properties usually do not correspond well with measure-theoretic properties.
 
