@@ -22,7 +22,7 @@ The nice thing about $\ell^p$ is that every point has mass (formally, every $\al
 We first show that $\lim_{n\to\infty}f_n(\alpha)$ exists for each $\alpha\in A$.
 Note that 
 $$ |f_n(\alpha) - f_m(\alpha)|^p \leq \sum_{\beta\in A}|f_n(\beta) - f_m(\beta)|^p \to 0, \text{as }n,m\to\infty. $$
-Thus, $\{f_n\}_{n\in\mathbb{N}}$ is pointwise Cauchy, and therefore $f=\lim_{n\to\infty}f_n$ is well-defined.
+Thus, $\{f_n\}\_{n\in\mathbb{N}}$ is pointwise Cauchy, and therefore $f=\lim_{n\to\infty}f_n$ is well-defined.
 
 It's pretty clear that $f\in\ell^p(A)$, since 
 $$\|f\|_p \leq \|f_n\|_p + \|f_n-f\|_p < \infty.$$
