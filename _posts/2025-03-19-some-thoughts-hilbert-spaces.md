@@ -4,11 +4,33 @@ date: 2025-03-17
 permalink: /posts/2025/03/notes-on-hilbert-spaces
 tags:
   - analysis
+  - functional analysis
   - problems
 ---
+{% include toc %}
+
 A few problems I thought about while working.
 
-{% include toc %}
+
+# $\ell^p(A)$ is always complete
+If $A$ is empty, then let's agree to ignore this irrelevant case.
+
+Otherwise, suppose $\\{f_n\\}_{n\in\mathbb{N}}$ is a Cauchy sequence.
+We would like to define $f = \lim_{n\to\infty}f_n$, where the limit is pointwise.
+The nice thing about $\ell^p$ is that every point has mass (formally, every $\alpha\in A$ is an atom of the counting measure), so this idea actually works.
+
+We first show that $\lim_{n\to\infty}f_n(\alpha)$ exists for each $\alpha\in A$.
+Note that 
+$$ |f_n(\alpha) - f_m(\alpha)|^p \leq \sum_{\beta\in A}|f_n(\beta) - f_m(\beta)|^p \to 0, \text{as }n,m\to\infty. $$
+Thus, $\\{f_n\\}_{n\in\mathbb{N}}$ is pointwise Cauchy, and therefore $f=\lim_{n\to\infty}f_n$ is well-defined.
+
+It's pretty clear that $f\in\ell^p(A)$, since 
+$$\|f\|_p \leq \|f_n\|_p + \|f_n-f\|_p < \infty.$$
+
+The proof for when $p=\infty$ is largely the same.
+
+> This is not interesting since $L^p$ spaces are always complete, but it is an example of how counting measure lets us write pointwise estimates in terms of the $\ell^p$ norm.
+
 # Every Orthonormal Basis Has the Same Size
 Interestingly, this proof actually requires two different proofs in the finite and infinite dimensional cases.
 

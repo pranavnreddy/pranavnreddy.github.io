@@ -16,6 +16,18 @@ Let me know if you spot any typos.
 
 
 # Real Analysis
+<!-- 
+## On an incomplete finite-dimensional vector space, not all norms are equivalent
+This one is actually pretty easy.
+Consider $(\mathbb{Q}, \|\cdot\|_2)$ and $(\mathbb{Q}, |\cdot|_p)$, where $|\cdot|_p$ is the $p$-adic norm.
+That is, for any prime $p$, define the $p$-adic valuation of an integer to be 
+$$\nu_p(n) = \sup\{k\in\mathbb{Z} : p^k | n\}.$$
+Note that $\nu_p(ab) = \nu_p(a)+\nu_p(b)$ (this is basically Euclid's Lemma).
+This naturally implies that for a rational $\frac{a}{b}$, $\nu_p(\frac{a}{b}) := \nu_p(a)-\nu_p(b)$.
+Then we define the $p$-adic absolute value to be $|q|_p = p^{-\nu_p(q)}$.
+Let us note that this really is a norm on $\mathbb{Q}$:, if $c$ is a rational number, then 
+$$|cq|_p=p^{-\nu_p(cq)} = p^{-\nu_p(c)-\nu_p(q)}= p^{-\nu_p(c)}p^{-\nu_p(q)} = |c|_p|q|_p$$ -->
+
 ## Lebesgue null set that is also comeager
 Let $Q_{k} = \bigcup_{q_n\in \mathbb{Q}}(q- 2^{-(n+k+1)}, q+2^{-(n+k+1)})$.
 Then,
@@ -118,6 +130,17 @@ The map from $\mathbb{R}^2\to\mathbb{R}^2$ defined by $\begin{bmatrix}
 </p>
 
 > Algebraic completeness of the base field is important here.
+
+## Linear map whose image and kernel are equal
+A silly example is just the zero map on the zero vector space.
+More generally, let $V$ be any vector space.
+Then, consider the map $T:V^2\to V^2$ defined by $(v_1,v_2)\mapsto(v_2,0)$.
+Its kernel is all vectors of the form $(v,0)$, which is also its image.
+
+> In $\mathbb{R}^2$ this looks like projection onto one axis and then reflection over the line $y=x$.
+
+> This isn't a very interesting example but I remember this because it was a question on my first college math exam.
+
 
 # Group Theory
 ## Nonabelian group where every subgroup is normal
