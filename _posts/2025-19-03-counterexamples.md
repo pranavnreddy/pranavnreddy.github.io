@@ -6,6 +6,7 @@ tags:
   - analysis
   - algebra
   - random
+toc: true
 ---
 <p>
 {% include toc %}
