@@ -7,10 +7,10 @@ tags:
   - functional analysis
   - problems
 ---
-{% include toc %}
 
 A few problems I thought about while working.
 
+{% include toc %}
 
 # $\ell^p(A)$ is always complete
 If $A$ is empty, then let's agree to ignore this irrelevant case.
