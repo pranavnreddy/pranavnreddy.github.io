@@ -6,7 +6,6 @@ tags:
   - analysis
   - functional analysis
   - problems
-toc: true
 ---
 {% include toc %}
 

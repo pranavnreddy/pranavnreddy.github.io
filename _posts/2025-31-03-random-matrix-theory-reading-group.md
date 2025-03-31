@@ -6,7 +6,6 @@ tags:
   - probability
   - reading
 ---
-{% include toc %}
 
 An informal reading group co-organized with Varun Sreedhar, using [Todd Kemp's notes on the subject](https://mathweb.ucsd.edu/~tkemp/RMT.Notes.pdf).
 
