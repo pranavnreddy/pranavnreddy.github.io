@@ -7,8 +7,9 @@ tags:
   - algebra
   - random
 ---
+<p>
 {% include toc %}
-
+</p>
 Keeping track of some good counterexamples when needed.
 I've roughly filtered them by topic for my own convenience.
 Let me know if you spot any typos.
