@@ -6,8 +6,8 @@ tags:
   - analysis
   - functional analysis
   - problems
-toc: true
 ---
+{% include toc %}
 
 A few problems I thought about while working.
 
@@ -15,7 +15,7 @@ A few problems I thought about while working.
 # $\ell^p(A)$ is always complete
 If $A$ is empty, then let's agree to ignore this irrelevant case.
 
-Otherwise, suppose $\{f_n\}\_{n\in\mathbb{N}}$ is a Cauchy sequence.
+Otherwise, suppose $\\{f_n\\}\_{n\in\mathbb{N}}$ is a Cauchy sequence.
 We would like to define $f = \lim_{n\to\infty}f_n$, where the limit is pointwise.
 The nice thing about $\ell^p$ is that every point has mass (formally, every $\alpha\in A$ is an atom of the counting measure), so this idea actually works.
 
