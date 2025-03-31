@@ -32,7 +32,7 @@ Let us note that this really is a norm on $\mathbb{Q}$:, if $c$ is a rational nu
 $$|cq|_p=p^{-\nu_p(cq)} = p^{-\nu_p(c)-\nu_p(q)}= p^{-\nu_p(c)}p^{-\nu_p(q)} = |c|_p|q|_p$$ -->
 
 ## Lebesgue null set that is also comeager
-Let $Q_{k} = \bigcup_{q_n\in \mathbb{Q}}(q- 2^{-(n+k+1)}, q+2^{-(n+k+1)})$.
+Let $Q_{k} = \bigcup_{q_n\in \mathbb{Q}}(q_n- 2^{-(n+k+1)}, q_n+2^{-(n+k+1)})$.
 Then,
 $$m(Q_k) \leq \sum_{n=1}^\infty 2^{-n-k} = 2^{-k}.$$
 Moreover, since $\mathbb{Q}\subseteq Q_k$, $Q_k$ is dense.
@@ -42,7 +42,7 @@ Moreover,
 $$Q^\complement = \left( \bigcap_{k\in\mathbb{N}}Q_k \right)^\complement =\bigcup_{k\in\mathbb{N}}Q_k^\complement.$$
 Since $Q_k$ is open, $Q_k^\complement$ is closed.
 Also let $x\in Q_k^\complement$.
-Since $Q_k$ is dense, there exists $q$ such that $|x-q| < \varepsilon$, so $Q_k^\complement$ has empty interior.
+Since $Q_k$ is dense, for all $\varepsilon > 0$ there exists $q\in Q_k$ such that $|x-q| < \varepsilon$, so $Q_k^\complement$ has empty interior.
 Thus, $Q^\complement$ is a meager subset of $\mathbb{R}$ whose complement has measure 0.
 
 > This is not really surprising once you realize that topological properties usually do not correspond well with measure-theoretic properties.
