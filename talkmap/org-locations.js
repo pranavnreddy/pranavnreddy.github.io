@@ -1,22 +1,27 @@
 var addressPoints = [
   [
-    "Talk 2 on Relevant Topic in Your Field<br />London School of Testing; London, UK",
-    51.4893335,
-    -0.14405508452768728
+    "SOC Reading Group Presentation 27 November 2024<br />UC San Diego, Scalable Optimization and Control Group; La Jolla, California",
+    32.8401623,
+    -117.2740777
   ],
   [
-    "Tutorial 1 on Relevant Topic in Your Field<br />UC-Berkeley Institute for Testing Science; Berkeley, CA, USA",
-    37.8708393,
-    -122.272863
+    "SOC Reading Group Presentation 23 November 2023<br />UC San Diego, Scalable Optimization and Control Group; La Jolla, California",
+    32.8401623,
+    -117.2740777
   ],
   [
-    "Conference Proceeding talk 3 on Relevant Topic in Your Field<br />Testing Institute of America 2014 Annual Conference; Los Angeles, CA, USA",
-    34.0536909,
-    -118.242766
+    "SOC Reading Group Presentation 4 October 2023<br />UC San Diego, Scalable Optimization and Control Group; La Jolla, California",
+    32.8401623,
+    -117.2740777
   ],
   [
-    "Talk 1 on Relevant Topic in Your Field<br />UC San Francisco, Department of Testing; San Francisco, CA, USA",
-    37.7792588,
-    -122.4193286
+    "SOC Reading Group Presentation 6 March 2024<br />UC San Diego, Scalable Optimization and Control Group; La Jolla, California",
+    32.8401623,
+    -117.2740777
+  ],
+  [
+    "SOC Reading Group Presentation 25 September 2024<br />UC San Diego, Scalable Optimization and Control Group; La Jolla, California",
+    32.8401623,
+    -117.2740777
   ]
 ];
