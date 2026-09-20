@@ -13,7 +13,7 @@ I've been learning a lot about randomized numerical linear algebra, and I've con
 {% include toc %}
 
 # Parallelization Increases Convergence Rate (somewhat)
-To my knowledge, it is an open problem to design an algorithm for solving the linera system $Ax = b$ that benefits from parallelization _in a way that is not a speedup of an underlying primitive operation._ To understand what this means, consider a standard iterative method, whose iterations might be written as something like 
+To my knowledge, it is an open problem to design an algorithm for solving the linear system $Ax = b$ that benefits from parallelization _in a way that is not a speedup of an underlying primitive operation._ To understand what this means, consider a standard iterative method, whose iterations might be written as something like 
 <p>
 \begin{equation*}
     x_{k+1} = F_k x_{k} + b_k.
