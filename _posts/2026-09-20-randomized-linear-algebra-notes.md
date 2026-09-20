@@ -14,7 +14,11 @@ I've been learning a lot about randomized numerical linear algebra, and I've con
 
 # Parallelization Increases Convergence Rate (somewhat)
 To my knowledge, it is an open problem to design an algorithm for solving the linera system $Ax = b$ that benefits from parallelization _in a way that is not a speedup of an underlying primitive operation._ To understand what this means, consider a standard iterative method, whose iterations might be written as something like 
-$$ x_{k+1} = F_k x_{k} + b_k.$$
+<p>
+\begin{equation*}
+    x_{k+1} = F_k x_{k} + b_k.
+\end{equation*}
+</p> 
 That is, the method applies an affine transformation to $x$ at each step.
 This benefits from parallelization, since the primitive operation of matrix-vector arithmetic is amenable to parallelization.
 However, the algorithm itself is still sequential: do the multiplication first (using whatever implementation you like), then do the addition, and then write to memory.
@@ -38,7 +42,7 @@ It is known that the sketch-and-project methods converge at a faster rate than t
 ## The Caveat
 This method kind of sucks actually, when measured in matrix-vector operations instead of iteration complexity (one reason why per-iteration complexity is deceiving).
 Say we use the Kaczmarz method on each processor, and for simplicity assume they do one Kaczmarz step before averaging.
-Note that the randomized Kaczmarz method has a linear (exponential if you aren't a numerical analysis person) convergence rate of $O(\alpha^k)$, where $\alpha = 1 - \frac{\sigma_{\min}(A)^2}{\|A\|_F^2}$.
+Note that the randomized Kaczmarz method has a linear (exponential if you aren't a numerical analysis person) convergence rate of $O(\alpha^k)$, where $\alpha = 1 - \frac{\sigma_{\min}(A)^2}{\\|A\\|_F^2}$.
 This ``parallel'' implementation requires roughly $N$ matrix-vector multiplies and adds, as well as an additional averaging step.
 If we instead spent those matrix-vector multiplies on just doing more iterations, we could gain a convergence factor of $\alpha^N$, instead of the $\frac{1}{N}\alpha + \frac{N-1}{N}\alpha^2$, which actually scales poorly with $N$: we should just do more Kaczmarz steps rather than bother with averaging.
 The case gets even worse when you drill down and consider the synchronization costs and so forth.
@@ -49,25 +53,47 @@ I believe an appropriate framework for understanding them is a **low-rank update
 Suppose we want to solve $Ax = b$, and we have some initial candidate solution $x_0$.
 Consider the problem
 
-$$ \min_{u}\|A(x_0+u) - b\| = \min_{u}\|Au - (b-Ax_0)\|.$$
+<p> 
+\begin{equation*}
+    \min_{u}\|A(x_0+u) - b\| = \min_{u}\|Au - (b-Ax_0)\|
+\end{equation*}
+</p>
 
 This is attempting to find the best step that minimizes the residual.
 Obviously, reparametrizing shows that the problem as stated is equivalent to solving the least-squares problem $\min_{x}\\|Ax-b\\|$.
 However, this may be hard, and we might want to take advantage of ``warm-starting'' our method with $x_0$.
 If $A\in\mathbb{R}^{m\times n}$ is wide ($m < n$), the solutions to the system lie in an affine subspace of at most dimension $m$. How can we search for such a subspace effectively? Let's try a *random* subspace, and go from there.
 That is, let's solve the problem 
-$$ \min_{u}\|AR(x_0+u) - b\| = \min_{u}\|ARu - (b-Ax_0)\|,$$
+
+<p> 
+\begin{equation*}
+    \min_{u}\|AR(x_0+u) - b\| = \min_{u}\|ARu - (b-Ax_0)\|,
+\end{equation*}
+</p>
+
 where $R\in\mathbb{R}^{n\times p}$ is a *sketch* that reduces the size of the problem.
 $R$ doesn't necessarily need to be random (you could choose it via some deterministic rule), but randomness makes the analysis easier (and more interesting).
 The solution to the above problem is
-$$u = (AR)^\dagger(b-Ax_0),$$
+
+<p> 
+\begin{equation*}
+    u = (AR)^\dagger(b-Ax_0)
+\end{equation*}
+</p>
+
 where $B^\dagger$ denotes the [Moore-Penrose inverse](https://en.wikipedia.org/wiki/Moore%E2%80%93Penrose_inverse) of $B$.
 and so the update is 
-$$x_+ = x_0 + Ru = x_0 + R(AR)^\dagger(b-Ax_0).$$
+
+<p> 
+\begin{equation*}
+    x_+ = x_0 + Ru = x_0 + R(AR)^\dagger(b-Ax_0).
+\end{equation*}
+</p>
+
 This is an affine dynamical system, so let's see how the error evolves to hopefully get a *linear* dynamical system:
 
 <p>
-\begin{align*}
+    \begin{align*}
         Ax_+ -b &= A(x_0 + Ru) - b \\
         &= A(x_0 + R(AR)^\dagger(b-Ax_0)) - b \\
         &= (Ax_0 - b) - AR(AR)^\dagger(Ax_0 - b) \\
@@ -110,16 +136,31 @@ Indeed, in this framework it's pretty clear why randomized coordinate descent co
 
 ### Gaussian Coordinate Descent
 Let $R \sim \mathcal{N}(0, I)$, so 
-$$AR(R^\top A^\top AR)^\dagger R^\top A^\top = \frac{ARR^\top A^\top}{\|AR\|^2}.$$
+
+<p> 
+\begin{equation*}
+    AR(R^\top A^\top AR)^\dagger R^\top A^\top = \frac{ARR^\top A^\top}{\|AR\|^2}.
+\end{equation*}
+</p> 
+
 Note that $AR\sim\mathcal{N}(0,AA^\top)$.
 If $A$ has full row rank, then we can apply [Lemma 20 of Gower's thesis](https://arxiv.org/pdf/1612.06013) to see that 
 
-$$\mathbb{E}\left[\frac{ARR^\top A^\top}{\|AR\|^2}\right] \succeq \frac{2}{\pi}\frac{AA^\top}{\|A\|^2_F}$$
+<p> 
+\begin{equation*}
+    \mathbb{E}\left[\frac{ARR^\top A^\top}{\|AR\|^2}\right] \succeq \frac{2}{\pi}\frac{AA^\top}{\|A\|^2_F}
+\end{equation*}
+</p> 
 
 > In fact, we don't really need the full row rank to write the matrix inequality above, but it makes the analysis nicer.
 
-Thus, 
-$$ 1 - \lambda_{\min}(\mathbb{E}[AR(R^\top A^\top AR)^\dagger R^\top A^\top]) \leq 1 - \frac{2}{\pi}\frac{\sigma_{\min}(A)^2}{\|A\|_F^2}.$$
+Thus,
+
+<p> 
+\begin{equation*}
+    1 - \lambda_{\min}(\mathbb{E}[AR(R^\top A^\top AR)^\dagger R^\top A^\top]) \leq 1 - \frac{2}{\pi}\frac{\sigma_{\min}(A)^2}{\|A\|_F^2}.
+\end{equation*}
+</p> 
 
 ## Remarks
 This can be further generalized to norms defined by an arbitrary positive definite matrix $Q$, but that would be too long and this is already too much math.
