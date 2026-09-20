@@ -13,8 +13,9 @@ My resume can be downloaded [here](/files/Resume.pdf).
 
 Education
 ======
-* B.S. in Mathematics, University of California, San Diego, 2025 (*in progress*)
-* B.S. in Computer Engineering, University of California, San Diego, 2025 (*in progress*)
+* PhD in Operations Research and Financial Engineering, Princeton University, 2025-present (*in progress*)
+* B.S. in Mathematics, University of California, San Diego, 2025
+* B.S. in Computer Engineering, University of California, San Diego, 2025
 * GPA: 3.96
 
 ---
@@ -22,7 +23,7 @@ Education
 Work experience
 ======
 ## Research Assistant – University of California, San Diego
-### Summer 2023 - Present
+### Summer 2023 - Summer 2025
   * Supervisor: Professor [Yang Zheng](https://zhengy09.github.io/)
   * Investigating applications of the Performance Estimation Problem (PEP) framework to weakly convex functions.
 
