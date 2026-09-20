@@ -33,13 +33,13 @@ Then, a simple application of the bias-variance decomposition yields
     \end{align*}
 </p>
 
-It is known that the sketch-and-project methods converge at a faster rate than their MSE (see [Gower's thesis, Table 2.1](https://arxiv.org/pdf/1612.06013)), so in theory this gives a ``free'' gain of a squared factor.
+It is known that the sketch-and-project methods converge at a faster rate than their MSE (see [Gower's thesis, Table 2.1](https://arxiv.org/pdf/1612.06013)), so in theory this gives a "free" gain of a squared factor.
 
 ## The Caveat
 This method kind of sucks actually, when measured in matrix-vector operations instead of iteration complexity (one reason why per-iteration complexity is deceiving).
 Say we use the Kaczmarz method on each processor, and for simplicity assume they do one Kaczmarz step before averaging.
 Note that the randomized Kaczmarz method has a linear (exponential if you aren't a numerical analysis person) convergence rate of $O(\alpha^k)$, where $\alpha = 1 - \frac{\sigma_{\min}(A)^2}{\|A\|_F^2}$.
-This ``parallel'' implementation requires roughly $N$ matrix-vector multiplies and adds, as well as an additional averaging step.
+This "parallel" implementation requires roughly $N$ matrix-vector multiplies and adds, as well as an additional averaging step.
 If we instead spent those matrix-vector multiplies on just doing more iterations, we could gain a convergence factor of $\alpha^N$, instead of the $\frac{1}{N}\alpha + \frac{N-1}{N}\alpha^2$, which actually scales poorly with $N$: we should just do more Kaczmarz steps rather than bother with averaging.
 The case gets even worse when you drill down and consider the synchronization costs and so forth.
 
@@ -51,7 +51,7 @@ Consider the problem
 $$ \min_{u}\|A(x_0+u) - b\| = \min_{u}\|Au - (b-Ax_0)\|.$$
 This is attempting to find the best step that minimizes the residual.
 Obviously, reparametrizing shows that the problem as stated is equivalent to solving the least-squares problem $\min_{x}\|Ax-b\|$.
-However, this may be hard, and we might want to take advantage of ``warm-starting'' our method with $x_0$.
+However, this may be hard, and we might want to take advantage of "warm-starting" our method with $x_0$.
 If $A\in\mathbb{R}^{m\times n}$ is wide ($m < n$), the solutions to the system lie in an affine subspace of at most dimension $m$. How can we search for such a subspace effectively? Let's try a *random* subspace, and go from there.
 That is, let's solve the problem 
 $$ \min_{u}\|AR(x_0+u) - b\| = \min_{u}\|ARu - (b-Ax_0)\|,$$
@@ -111,6 +111,7 @@ Let $R \sim \mathcal{N}(0, I)$, so
 $$AR(R^\top A^\top AR)^\dagger R^\top A^\top = \frac{ARR^\top A^\top}{\|AR\|^2}.$$
 Note that $AR\sim\mathcal{N}(0,AA^\top)$.
 If $A$ has full row rank, then we can apply [Lemma 20 of Gower's thesis](https://arxiv.org/pdf/1612.06013) to see that 
+
 $$\mathbb{E}\left[\frac{ARR^\top A^\top}{\|AR\|^2}\right] \succeq \frac{2}{\pi}\frac{AA^\top}{\|A\|^2_F}$$
 
 > In fact, we don't really need the full row rank to write the matrix inequality above, but it makes the analysis nicer.
@@ -120,6 +121,6 @@ $$ 1 - \lambda_{\min}(\mathbb{E}[AR(R^\top A^\top AR)^\dagger R^\top A^\top]) \l
 
 ## Remarks
 This can be further generalized to norms defined by an arbitrary positive definite matrix $Q$, but that would be too long and this is already too much math.
-Rather, I hope this provides a ``dual'' view on sketch-and-project methods, which frequently analyze tall matrices ($m > n$, more rows than columns) that arise in data science applications.
+Rather, I hope this provides a "dual" view on sketch-and-project methods, which frequently analyze tall matrices ($m > n$, more rows than columns) that arise in data science applications.
 For an optimizer, however, wide matrices are much more common, since the full column rank assumption present in these works would make optimization trivial (there would only be 1 feasible point in the linear equality $Ax = b$).
 Moreover, instead of a guarantee on iterate convergence, an analysis of right sketches seems to naturally favor guarantees on convergence of the function value.
