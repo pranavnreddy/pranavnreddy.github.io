@@ -48,20 +48,28 @@ I have not seen a clean overview of an equivalent right-sketch framework in the 
 I believe an appropriate framework for understanding them is a **low-rank update**.
 Suppose we want to solve $Ax = b$, and we have some initial candidate solution $x_0$.
 Consider the problem
+
 $$ \min_{u}\|A(x_0+u) - b\| = \min_{u}\|Au - (b-Ax_0)\|.$$
+
 This is attempting to find the best step that minimizes the residual.
 Obviously, reparametrizing shows that the problem as stated is equivalent to solving the least-squares problem $\min_{x}\|Ax-b\|$.
 However, this may be hard, and we might want to take advantage of "warm-starting" our method with $x_0$.
 If $A\in\mathbb{R}^{m\times n}$ is wide ($m < n$), the solutions to the system lie in an affine subspace of at most dimension $m$. How can we search for such a subspace effectively? Let's try a *random* subspace, and go from there.
 That is, let's solve the problem 
+
 $$ \min_{u}\|AR(x_0+u) - b\| = \min_{u}\|ARu - (b-Ax_0)\|,$$
+
 where $R\in\mathbb{R}^{n\times p}$ is a *sketch* that reduces the size of the problem.
 $R$ doesn't necessarily need to be random (you could choose it via some deterministic rule), but randomness makes the analysis easier (and more interesting).
 The solution to the above problem is
+
 $$u = (AR)^\dagger(b-Ax_0),$$
+
 where $B^\dagger$ denotes the [Moore-Penrose inverse](https://en.wikipedia.org/wiki/Moore%E2%80%93Penrose_inverse) of $B$.
 and so the update is 
+
 $$x_+ = x_0 + Ru = x_0 + R(AR)^\dagger(b-Ax_0).$$
+
 This is an affine dynamical system, so let's see how the error evolves to hopefully get a *linear* dynamical system:
 
 <p>
@@ -103,7 +111,7 @@ We used a standard result on pseudoinverses to get the equality in the last line
 
 ## Examples
 ### Randomized Coordinate Descent ([Leventhal & Lewis, 2018](https://arxiv.org/pdf/0806.3015)) 
-Choose $R = e_i$ (the standard basis vector) with probability $\frac{\|a_i\|^2}{\|A\|_F^2}$, where $a_i$ is the $i$-th column of $A$, to get the convergence rate of the paper: $1 - \lambda_{\min}(\mathbb{E}[AR(R^\top A^\top AR)^\dagger R^\top A^\top]) = 1 - \frac{\sigma_{\min}(A)^2}{\|A\|_F^2}$.
+Choose $R = e_i$ (the standard basis vector) with probabilit, where $a_i$ is the $i$-th column of $A$, to get the convergence rate of the paper: $1 - \lambda_{\min}(\mathbb{E}[AR(R^\top A^\top AR)^\dagger R^\top A^\top]) = 1 - \frac{\sigma_{\min}(A)^2}{\|A\|_F^2}$.
 Indeed, in this framework it's pretty clear why randomized coordinate descent converges to the least-squares solution even for an inconsistent system: the algorithm searches for the best low-rank update to minimize the least-squares residual.
 
 ### Gaussian Coordinate Descent
