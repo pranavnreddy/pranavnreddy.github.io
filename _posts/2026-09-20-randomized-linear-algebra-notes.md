@@ -20,7 +20,7 @@ This benefits from parallelization, since the primitive operation of matrix-vect
 However, the algorithm itself is still sequential: do the multiplication first (using whatever implementation you like), then do the addition, and then write to memory.
 
 Let's try analyzing a very simple parallel algorithm.
-Suppose we have $N$ processors, each having their own local iterate, denoted $x^{(i)}$ for the $i$th processors iterate, and let $\bar{x}$ be their arithmetic mean.
+Suppose we have $N$ processors, each having their own local iterate, denoted $x^{(i)}$ for the $i$-th processors iterate, and let $\bar{x}$ be their arithmetic mean.
 For simplicity, let's also assume that each processor runs the exact same (possibly stochastic) algorithm for solving $Ax=b$.
 Then, a simple application of the bias-variance decomposition yields
 
@@ -103,7 +103,7 @@ We used a standard result on pseudoinverses to get the equality in the last line
 
 ## Examples
 ### Randomized Coordinate Descent ([Leventhal & Lewis, 2018](https://arxiv.org/pdf/0806.3015)) 
-Choose $R = e_i$ (the standard basis vector) with probability $\frac{\|a_i\|^2}{\|A\|_F^2}$, where $a_i$ is the $i$th column of $A$, to get the convergence rate of the paper: $1 - \lambda_{\min}(\mathbb{E}[AR(R^\top A^\top AR)^\dagger R^\top A^\top]) = 1 - \frac{\sigma_{\min}(A)^2}{\|A\|_F^2}$.
+Choose $R = e_i$ (the standard basis vector) with probability $\frac{\|a_i\|^2}{\|A\|_F^2}$, where $a_i$ is the $i$-th column of $A$, to get the convergence rate of the paper: $1 - \lambda_{\min}(\mathbb{E}[AR(R^\top A^\top AR)^\dagger R^\top A^\top]) = 1 - \frac{\sigma_{\min}(A)^2}{\|A\|_F^2}$.
 Indeed, in this framework it's pretty clear why randomized coordinate descent converges to the least-squares solution even for an inconsistent system: the algorithm searches for the best low-rank update to minimize the least-squares residual.
 
 ### Gaussian Coordinate Descent
