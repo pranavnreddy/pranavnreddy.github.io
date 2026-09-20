@@ -8,7 +8,7 @@ redirect_from:
   - /about.html
 ---
 
-I am currently a PhD student in the [Operations Research and Financial Engineering](https://orfe.princeton.edu/) at Princeton University, working with Professor [Bartolomeo Stellato](https://stella.to/) on inexact algorithms for linearly constrained optimization.
+I am currently a PhD student in the [Operations Research and Financial Engineering department](https://orfe.princeton.edu/) at Princeton University, working with Professor [Bartolomeo Stellato](https://stella.to/) on inexact algorithms for linearly constrained optimization.
 
 Previously, I was a student at the University of California, San Diego, where I majored in both Mathematics and Computer Engineering. I was a member of the [Scalable Optimization and Control Group](https://zhengy09.github.io/soclab.html) under the supervision of Professor [Yang Zheng](https://zhengy09.github.io/index.html).
 

@@ -10,7 +10,7 @@ locale                   : "en-US"
 title                    : "Pranav Reddy"
 title_separator          : "-"
 name                     : &name "Pranav Reddy"
-description              : &description "I am currently a student at UCSD studying Mathematics and Computer Engineering. My interests lie in convex optimization and probability theory."
+description              : &description "I am currently a PhD student in the Operations Research and Financial Engineering department at Princeton University, working with Professor Bartolomeo Stellato on inexact algorithms for linearly constrained optimization."
 url                      : https://pranavnreddy.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "pranavnreddy/pranavnreddy.github.io"
@@ -82,8 +82,8 @@ analytics:
 author:
   name             : "Pranav Reddy"
   avatar           : "pfp.png"
-  bio              : "Mathematics and Computer Engineering Student @ UCSD"
-  location         : "San Diego, CA"
+  bio              : "PhD Student @ Princeton"
+  location         : "Princeton, NJ"
   employer         :
   pubmed           : 
   googlescholar    : 

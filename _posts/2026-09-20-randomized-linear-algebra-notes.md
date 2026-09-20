@@ -51,6 +51,7 @@ Feel free to try running your own numerical experiments and let me know if you a
 # A Brief Overview of Right Sketches
 I have not seen a clean overview of an equivalent right-sketch framework in the style of [Gower's thesis](https://arxiv.org/pdf/1612.06013).
 I believe an appropriate framework for understanding them is a **low-rank update**.
+
 Suppose we want to solve $Ax = b$, and we have some initial candidate solution $x_0$.
 Consider the problem
 
