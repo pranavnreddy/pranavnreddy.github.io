@@ -33,13 +33,13 @@ Then, a simple application of the bias-variance decomposition yields
     \end{align*}
 </p>
 
-It is known that the sketch-and-project methods converge at a faster rate than their MSE (see [Gower's thesis, Table 2.1](https://arxiv.org/pdf/1612.06013)), so in theory this gives a "free" gain of a squared factor.
+It is known that the sketch-and-project methods converge at a faster rate than their MSE (see [Gower's thesis, Table 2.1](https://arxiv.org/pdf/1612.06013)), so in theory this gives a ``free'' gain of a squared factor.
 
 ## The Caveat
 This method kind of sucks actually, when measured in matrix-vector operations instead of iteration complexity (one reason why per-iteration complexity is deceiving).
 Say we use the Kaczmarz method on each processor, and for simplicity assume they do one Kaczmarz step before averaging.
 Note that the randomized Kaczmarz method has a linear (exponential if you aren't a numerical analysis person) convergence rate of $O(\alpha^k)$, where $\alpha = 1 - \frac{\sigma_{\min}(A)^2}{\|A\|_F^2}$.
-This "parallel" implementation requires roughly $N$ matrix-vector multiplies and adds, as well as an additional averaging step.
+This ``parallel'' implementation requires roughly $N$ matrix-vector multiplies and adds, as well as an additional averaging step.
 If we instead spent those matrix-vector multiplies on just doing more iterations, we could gain a convergence factor of $\alpha^N$, instead of the $\frac{1}{N}\alpha + \frac{N-1}{N}\alpha^2$, which actually scales poorly with $N$: we should just do more Kaczmarz steps rather than bother with averaging.
 The case gets even worse when you drill down and consider the synchronization costs and so forth.
 
@@ -52,24 +52,18 @@ Consider the problem
 $$ \min_{u}\|A(x_0+u) - b\| = \min_{u}\|Au - (b-Ax_0)\|.$$
 
 This is attempting to find the best step that minimizes the residual.
-Obviously, reparametrizing shows that the problem as stated is equivalent to solving the least-squares problem $\min_{x}\|Ax-b\|$.
-However, this may be hard, and we might want to take advantage of "warm-starting" our method with $x_0$.
+Obviously, reparametrizing shows that the problem as stated is equivalent to solving the least-squares problem $\min_{x}\\|Ax-b\\|$.
+However, this may be hard, and we might want to take advantage of ``warm-starting'' our method with $x_0$.
 If $A\in\mathbb{R}^{m\times n}$ is wide ($m < n$), the solutions to the system lie in an affine subspace of at most dimension $m$. How can we search for such a subspace effectively? Let's try a *random* subspace, and go from there.
 That is, let's solve the problem 
-
 $$ \min_{u}\|AR(x_0+u) - b\| = \min_{u}\|ARu - (b-Ax_0)\|,$$
-
 where $R\in\mathbb{R}^{n\times p}$ is a *sketch* that reduces the size of the problem.
 $R$ doesn't necessarily need to be random (you could choose it via some deterministic rule), but randomness makes the analysis easier (and more interesting).
 The solution to the above problem is
-
 $$u = (AR)^\dagger(b-Ax_0),$$
-
 where $B^\dagger$ denotes the [Moore-Penrose inverse](https://en.wikipedia.org/wiki/Moore%E2%80%93Penrose_inverse) of $B$.
 and so the update is 
-
 $$x_+ = x_0 + Ru = x_0 + R(AR)^\dagger(b-Ax_0).$$
-
 This is an affine dynamical system, so let's see how the error evolves to hopefully get a *linear* dynamical system:
 
 <p>
@@ -111,7 +105,7 @@ We used a standard result on pseudoinverses to get the equality in the last line
 
 ## Examples
 ### Randomized Coordinate Descent ([Leventhal & Lewis, 2018](https://arxiv.org/pdf/0806.3015)) 
-Choose $R = e_i$ (the standard basis vector) with probabilit, where $a_i$ is the $i$-th column of $A$, to get the convergence rate of the paper: $1 - \lambda_{\min}(\mathbb{E}[AR(R^\top A^\top AR)^\dagger R^\top A^\top]) = 1 - \frac{\sigma_{\min}(A)^2}{\|A\|_F^2}$.
+Choose $R = e_i$ (the standard basis vector) with probability $\frac{\|a\_i\|^2}{\|A\|\_F^2}$, where $a_i$ is the $i$-th column of $A$, to get the convergence rate of the paper: $1 - \lambda_{\min}(\mathbb{E}[AR(R^\top A^\top AR)^\dagger R^\top A^\top]) = 1 - \frac{\sigma_{\min}(A)^2}{\|A\|_F^2}$.
 Indeed, in this framework it's pretty clear why randomized coordinate descent converges to the least-squares solution even for an inconsistent system: the algorithm searches for the best low-rank update to minimize the least-squares residual.
 
 ### Gaussian Coordinate Descent
@@ -129,6 +123,6 @@ $$ 1 - \lambda_{\min}(\mathbb{E}[AR(R^\top A^\top AR)^\dagger R^\top A^\top]) \l
 
 ## Remarks
 This can be further generalized to norms defined by an arbitrary positive definite matrix $Q$, but that would be too long and this is already too much math.
-Rather, I hope this provides a "dual" view on sketch-and-project methods, which frequently analyze tall matrices ($m > n$, more rows than columns) that arise in data science applications.
+Rather, I hope this provides a ``dual'' view on sketch-and-project methods, which frequently analyze tall matrices ($m > n$, more rows than columns) that arise in data science applications.
 For an optimizer, however, wide matrices are much more common, since the full column rank assumption present in these works would make optimization trivial (there would only be 1 feasible point in the linear equality $Ax = b$).
 Moreover, instead of a guarantee on iterate convergence, an analysis of right sketches seems to naturally favor guarantees on convergence of the function value.
