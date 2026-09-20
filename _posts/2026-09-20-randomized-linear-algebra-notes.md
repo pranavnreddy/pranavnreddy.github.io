@@ -37,7 +37,7 @@ Then, a simple application of the bias-variance decomposition yields
     \end{align*}
 </p>
 
-It is known that the sketch-and-project methods converge at a faster rate than their MSE (see [Gower's thesis, Table 2.1](https://arxiv.org/pdf/1612.06013)), so in theory this gives a "free" gain of a squared factor.
+It is known that the bias of sketch-and-project methods converge at a faster rate than their MSE (see [Gower's thesis, Table 2.1](https://arxiv.org/pdf/1612.06013)), so in theory this gives a "free" gain of a squared factor.
 
 ## The Caveat
 This method kind of sucks actually, when measured in matrix-vector operations instead of iteration complexity (one reason why per-iteration complexity is deceiving).
@@ -46,6 +46,7 @@ Note that the randomized Kaczmarz method has a linear (exponential if you aren't
 This "parallel" implementation requires roughly $N$ matrix-vector multiplies and adds, as well as an additional averaging step.
 If we instead spent those matrix-vector multiplies on just doing more iterations, we could gain a convergence factor of $\alpha^N$, instead of the $\frac{1}{N}\alpha + \frac{N-1}{N}\alpha^2$, which actually scales poorly with $N$: we should just do more Kaczmarz steps rather than bother with averaging.
 The case gets even worse when you drill down and consider the synchronization costs and so forth.
+Feel free to try running your own numerical experiments and let me know if you agree or disagree.
 
 # A Brief Overview of Right Sketches
 I have not seen a clean overview of an equivalent right-sketch framework in the style of [Gower's thesis](https://arxiv.org/pdf/1612.06013).
@@ -158,7 +159,7 @@ If $A$ has full row rank, then we can apply [Lemma 20 of Gower's thesis](https:/
 \end{equation*}
 </p> 
 
-> In fact, we don't really need the full row rank to write the matrix inequality above, but it makes the analysis nicer.
+> In fact, we don't really need the full row rank assumption to write the matrix inequality above, but it makes the analysis nicer.
 
 Thus,
 
