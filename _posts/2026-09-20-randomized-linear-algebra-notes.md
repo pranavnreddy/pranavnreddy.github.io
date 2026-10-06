@@ -177,12 +177,12 @@ For an optimizer, however, wide matrices are much more common, since the full co
 Moreover, instead of a guarantee on iterate convergence, an analysis of right sketches seems to naturally favor guarantees on convergence of the function value.
 
 
-# Randomized (Block) Kaczmarz Converges to the Projection of the Initial Iterate
+# The (Block) Kaczmarz Method Converges to the Projection of the Initial Iterate
 ## Simple Kaczmarz: One row at a time
 This is a somewhat interesting result.
 Suppose we want to solve the system $Ax = b$, where $A \in \mathbb{R}^{m\times n}$ and $m < n$.
 Very often, we may want to find a solution which minimizes the displacement from a starting point.
-In mathematical terms, this is the projection of the solution onto a hyperplane, which we'll denote as $\Pi(x)$.z
+In mathematical terms, this is the projection of the solution onto a hyperplane, which we'll denote as $\Pi(x)$.
 That is, we want to solve
 
 <p> 
@@ -250,16 +250,17 @@ If $a_{i_k}$ is the row chosen at iteration $k$, then
 </p>
 
 We combined scalar constants into $\alpha_i$ to separate the essence of the proof.
-From a well-known result about pseudo inverses, $A^\dag A A^\top = A^\top$, which is why the second term vanishes.
+From a well-known result about pseudo inverses, $A^\dagger A A^\top = A^\top$, which is why the second term vanishes.
 
-> In fact, this shows that in general, any method where the updates are in the span of the rows leaves the projection invariant. This also shows that running gradient descent on the objective $\|Ax-b\|^2$ preserves the projection.
+> In fact, this shows that in general, any method where the updates are in the span of the rows leaves the projection invariant. This also shows that running gradient descent on the objective $\\|Ax-b\\|^2$ preserves the projection.
 
 Since the projection is invariant under row-action methods, we just need to show that the method actually converges to this invariant.
 Let's expand the error dynamics and see what comes out:
 
 <p>
 \begin{align*}
-    \|x_{k+1} - \Pi(x_{k+1})\|^2 &= \|x_{k} - \Pi(x_k)\|^2 -2\left\langle x_{k} - \Pi(x_k), \frac{b_{i_k} - \langle a_{i_k} , x_k\rangle }{\|a_{i_k}\|^2}a_{i_k} \right\rangle+ \left\|\frac{b_{i_k} - \langle a_{i_k} , x_k\rangle }{\|a_{i_k}\|^2}a_{i_k}\right\|^2.
+    \|x_{k+1} - \Pi(x_{k+1})\|^2 &= \|x_{k} - \Pi(x_k)\|^2 -2\left\langle x_{k} - \Pi(x_k), \frac{b_{i_k} - \langle a_{i_k} , x_k\rangle }{\|a_{i_k}\|^2}a_{i_k} \right\rangle \\
+    &\quad\quad\quad\quad\quad + \left\|\frac{b_{i_k} - \langle a_{i_k} , x_k\rangle }{\|a_{i_k}\|^2}a_{i_k}\right\|^2.
 \end{align*}
 </p>
 
@@ -281,7 +282,8 @@ Thus,
 
 <p>
 \begin{align*}
-    \|x_{k+1} - \Pi(x_{k+1})\|^2 &= \|x_{k} - \Pi(x_k)\|^2 -2\left\langle x_{k} - \Pi(x_k), \frac{b_{i_k} - \langle a_{i_k} , x_k\rangle }{\|a_{i_k}\|^2}a_{i_k} \right\rangle+ \left\|\frac{b_{i_k} - \langle a_{i_k} , x_k\rangle }{\|a_{i_k}\|^2}a_{i_k}\right\|^2 \\
+    \|x_{k+1} - \Pi(x_{k+1})\|^2 &= \|x_{k} - \Pi(x_k)\|^2 -2\left\langle x_{k} - \Pi(x_k), \frac{b_{i_k} - \langle a_{i_k} , x_k\rangle }{\|a_{i_k}\|^2}a_{i_k} \right\rangle \\
+    &\quad\quad\quad\quad\quad + \left\|\frac{b_{i_k} - \langle a_{i_k} , x_k\rangle }{\|a_{i_k}\|^2}a_{i_k}\right\|^2.\\
     &= \|x_{k} - \Pi(x_k)\|^2 -2\|x_{k}-x_{k+1}\|^2 + \|x_{k}-x_{k+1}\|^2 \\
     &= \|x_{k} - \Pi(x_k)\|^2 - \|x_{k}-x_{k+1}\|^2.
 \end{align*}
@@ -290,7 +292,7 @@ Thus,
 
 Since $\Pi(x_{k+1}) = \Pi(x_k) = \dots = \Pi(x_0)$, we find that the distance from the projection is monotone decreasing.
 
-Now, we just bound $\|x_k - x_{k+1}\|^2$ in terms of $\|x_{k} - \Pi(x_k)\|^2$.
+Now, we just bound $\\|x_k - x_{k+1}\\|^2$ in terms of $\\|x_{k} - \Pi(x_k)\\|^2$.
 
 <p>
 \begin{align*}
@@ -328,7 +330,7 @@ That is,
 \end{align*}
 </p>
 
-where $\varphi^* < 1$ is the smallest angle between two rows (assuming there are no parallel rows).
+where $\cos(\varphi^*) < 1$ is the cosine of the smallest angle between two rows (assuming there are no parallel rows).
 
 ## The Block Case
 Since Kaczmarz iterates by projecting onto one row at a time, maybe we can get faster convergence if we try projecting onto multiple rows at once.
@@ -344,9 +346,9 @@ That is,
 \end{align*}
 </p>
 
-where $z_j$ are a sequence of iterates with $z_0 = x_k$ and $z_{j+1} = z_j + \frac{b_{i_j} - \langle a_{i_j}, z_j\rangle}{\|a_{i_j}\|^2}$, restricting the choice of row indices to have $i_j \in I$.
+where $z_j$ are a sequence of iterates with $z_0 = x_k$ and $z_{j+1} = z_j + \frac{b_{i_j} - \langle a_{i_j}, z_j\rangle}{\\|a_{i_j}\\|^2}$, restricting the choice of row indices to have $i_j \in I$.
 By the results of the previous section, this leaves the projection of $z_j$ onto the solution set $\{x : Ax = b\}$ invariant.
-Since the projection onto a hyperplane is a continuous map, the limit also has this property.
+Since projection onto a hyperplane is a continuous map, the limit also has this property.
 More formally,
 
 <p>
@@ -384,9 +386,10 @@ For any matrix $B$, the matrix $B^\dagger B$ is a the orthogonal projector onto 
 \end{align*}
 </p>
 
-> This is basically what we showed above in a more succinct form, but I think it detracts from the interesting geometry of the problem.
+> This is basically what we showed in the one-row section in a more succinct form, but I think it detracts from the interesting geometry of the problem.
 
-Alternatively, one can expand the quadratic form and use the identity $BB^\dag B = B$ to verify the equality above.
-Regardless, one can show that after cycling through all choices of subsets of indices, and assuming that the subsets cover $[1:m]$, we can show that we get a contraction after each epoch, assuming the problem isn't solved yet, and thus we get convergence to the minimizer.
+Alternatively, one can expand the quadratic form and use the identity $BB^\dagger B = B$ to verify the equality above.
+Regardless, one can show that after cycling through all choices of subsets of indices, and assuming that the subsets cover $[1:m]$, we get a contraction after each epoch, assuming the problem isn't solved yet, and thus we get convergence to the projection.
 
 > For a more thorough overview of block Kaczmarz, check out [Needell and Tropp's wonderful paper](https://arxiv.org/abs/1208.3805).
+Also note that for either case, we did not assume anything about the selection of the projection. It could be randomized, cyclic, chosen via dynamic programming, or anything you like and these properties would hold.
