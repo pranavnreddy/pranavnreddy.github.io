@@ -51,6 +51,7 @@ This algorithm takes as input a $m\times n$ matrix $A$ and an $m$-vector $b$, an
 The algorithm can be recursively described very simply: divide the 1st row by the top left entry $a_{1,1}$ so that the top left entry is 1 (if $a_{1,1} = 0$ we have to do a _pivot_).
 Then, for each row $a_{i,:}$, set $a_{i,:} \leftarrow a_{i,:} - a_{i,1}a_{1,:}$.
 This makes the first column of the matrix all zeros except for the top entry, $a_{1,1} = 1$.
+You then recursively repeat this on the submatrix $A_{2:m,2:n}$ ($A$ with the top row and leftmost column removed) until you run out of rows or columns.
 
 At first glance, Gaussian elimination has no hyperparameters.
 Moreover, this algorithm works great in practice.
