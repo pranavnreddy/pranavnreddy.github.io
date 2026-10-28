@@ -9,15 +9,17 @@ tags:
   - philosophy
 ---
 
-A quick scroll through arXiv will soon lead to you to a menagerie of "hyperparameter-free" algorithms.
+We are always hyperparameter tuning.
+
+{% include toc %}
+
+Yet, a quick scroll through arXiv will soon lead to you to a menagerie of "hyperparameter-free" algorithms.
 
 
 ![A simple search for "hyperparameter free" on arXiv](/images/hyperparameter-free.png)
 
 What does such a phrase even mean, and is it even possible?
 I don't think so, and hopefully I can convince you that it isn't.
-
-{% include toc %}
 
 # What is a Hyperparameter?
 A hyperparameter is a number which controls some aspect of how an algorithm is run, and is set in advance of running said algorithm.
