@@ -43,7 +43,7 @@ The choice of such a threshold is a hyperparameter.
 It may not necessarily be one that the user gets to decide for themselves (we seem to have coalesced around using $p=0.05$ for everyone), but it is a number that guides the trajectory of our algorithms, set in advance of running said algorithm.
 
 # Hyperparameter-Free Algorithms
-The promise of hyperparameter-free algorithms is that they can bypass the need to tune hyperparameters, and instead compute the optimal (or good enough) value of the hyperparameter as a function of the input.
+The promise of hyperparameter-free algorithms is that they can bypass the need to tune hyperparameters, and instead compute an optimal (or good enough) value of the hyperparameter as a function of the input.
 The user of the algorithm doesn't need to do anything except press start.
 
 A very simple example of a seemingly hyperparameter-free algorithm is Gaussian elimination.
